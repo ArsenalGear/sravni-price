@@ -1,0 +1,46 @@
++b('form')#addShop.add-shop.popup.white-popup-block.mfp-hide(autocomplete='off')
+    +e('div').header
+        +e('h2').title Оставить заявку онлайн
+        +e('div').close-btn
+            +e('img').close(src="img/theme/icons/closeModal.svg" alt="закрыть")
+    +e('div').body
+        +e('input')#fio.input-default.input-default(type='text' name='fio' placeholder='ФИО' required='required')
+        +e('input')#phone.input-default.input-default(type='tel' name='tel' placeholder='Телефон' required='required')
+        +e('input')#eMail.input-default.input-default(type='email' name='eMail' placeholder='E - mail' required='required')
+        +e('textarea')#message.textarea-default.input-default(rows="7" name='message' placeholder='Сообщение' required='required')
+        +e('div').send-block
+            +e('div').confirm-block
+                +b('label').label-checkbox
+                    +e('input').input-hidden(required type="checkbox" id="confirmData" name="confirmData")
+                    +e('span').label-span
+                +e('p') Я соглашаюсь на обработку персональных данных
+
+            +e('button').button.button.button-yellow(type="submit" value="отправить") отправить
+
++b('form')#chooseRegion.add-shop.popup.white-popup-block.mfp-hide(autocomplete='off')
+    +e('div').header
+        +e('h2').title Выбор города
+        +e('div').close-btn
+            +e('img').close(src="img/theme/icons/closeModal.svg" alt="закрыть")
+    +e('div').body
+        +e('div').row
+            +e('p').country Страна:
+            +e('p').country-choose Россия
+
+        +e('div').row
+            +e('p').country Уточнить регион:
+            +e('select').select-country#countrySelect(name='country', data-placeholder='')
+
+        +e('div').row
+            +e('p').country Выбрать город:
+
+        +e('div').regions-block.input-default
+
+
++b('form')#thanks.add-shop.popup.white-popup-block.mfp-hide(autocomplete='off')
+    +e('div').header
+        +e('h2').title Спасибо!
+        +e('div').close-btn
+            +e('img').close(src="img/theme/icons/closeModal.svg" alt="закрыть")
+    +e('div').body
+        +e('p').thanks-text Ваша заявка принята. <br> Наш специалист рассмотрит ваше обращение и обязательно свяжется с вами в ближайшее время.

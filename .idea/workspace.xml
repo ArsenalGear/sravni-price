@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="93d75168-4a12-4579-a790-a2b385111c32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/CategoriesMapping.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/City.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/CategoriesMappings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/ClearDatabaseForParsing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Fixtree.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/ParseCsv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/PushServer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/TestCategoriesMappings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/CustomMenu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/FilterOption.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/FilterType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/FilterTypeFilterOption.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CitiesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CsvImportController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FilterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NotificationsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductArticlesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ReviewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerAuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerBaseController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerBreadController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerCompassController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerDatabaseController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerMediaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerMenuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerRoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerSettingsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Voyager/VoyagerUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/ParseCsv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/ParseSalesCsv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/NewFeedbackNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/NewSubscriberNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Paginator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/PriceFormat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ProductArticle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ProductFilterTypeFilterOption.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Region.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Shop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Socket/Base/BasePusher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Socket/Pusher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Vendor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/hashing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/voyager-hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/voyager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2016_02_15_204651_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_04_17_083831_create_shops_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_04_22_104034_create_vendors_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_04_22_112034_create_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_04_22_135552_create_category_product_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_04_23_072436_create_shop_product_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_04_24_124436_create_custom_menus_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_04_25_124752_add_min_price_fields_to_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_04_26_093037_add_lft_and_rgt_fields_to_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_04_30_091154_create_categories_mappings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_07_081141_add_path_field_to_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_13_093256_add_shops_count_field_to_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_13_111124_add_meta_title_and_meta_description_fields_to_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_16_075711_add_url_field_to_shops_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_16_084522_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_16_175411_create_failed_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_20_132054_create_filter_types_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_20_132310_create_filter_options_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_21_132359_create_filter_type_filter_option_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_23_092214_create_product_filter_type_filter_option_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_30_140717_add_shop_id_field_to_categories_mappings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_31_093405_add_categories_mapping_file_field_to_shops_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_06_04_082628_add_path_names_field_to_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_06_18_104336_add_description_field_to_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_06_18_131829_create_reviews_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_06_24_144005_add_slug_field_to_shops_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_06_25_105611_add_priority_checkbox_and_shop_search_url_field_to_shops_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_06_26_103840_add_avg_rate_and_reviews_count_fields_to_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_06_26_115134_add_old_price_field_to_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_06_26_122449_add_sales_url_field_to_shops_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_01_142949_create_product_articles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_04_074813_add_sale_persent_field_to_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_04_103954_add_seo_text_field_to_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_04_122111_add_views_field_to_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_09_065015_create_cities_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_09_065036_create_regions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_080412_change_fields_limit_in_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_080654_add_indexes_to_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_081210_change_fields_limit_in_categories_mappings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_081313_add_indexes_to_categories_mappings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_081932_add_indexes_to_category_product_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_082246_add_indexes_to_cities_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_083004_add_indexes_to_custom_menus_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_083507_add_indexes_to_filter_options_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_083644_add_indexes_to_filter_types_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_083825_add_indexes_to_filter_type_filter_option_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_084057_change_fields_in_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_084344_add_indexes_to_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_085114_change_fields_in_product_articles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_085242_add_indexes_to_product_articles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_085415_add_indexes_to_product_filter_type_filter_option_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_085754_add_indexes_to_reviews_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_090214_change_fields_in_shops_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_090348_add_indexes_to_shops_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_090451_change_fields_in_shop_product_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_11_090914_add_indexes_to_shop_product_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_17_090540_add_product_name_template_field_to_shops_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/CitiesSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ContentSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/DataRowsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/DataTypesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/MenuItemsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/MenusTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/PermissionRoleTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/SettingsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/TranslationsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/VoyagerDatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/VoyagerDummyDatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/hooks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/auto.cnf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/ca.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/ibdata1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/columns_priv.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/columns_priv.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/columns_priv.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/db.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/db.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/db.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/db.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/engine_cost.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/engine_cost.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/event.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/event.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/event.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/func.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/func.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/func.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/general_log.CSM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/general_log.CSV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/general_log.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/gtid_executed.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/gtid_executed.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/help_category.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/help_category.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/help_keyword.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/help_keyword.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/help_relation.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/help_relation.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/help_topic.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/help_topic.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/innodb_index_stats.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/innodb_index_stats.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/innodb_table_stats.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/innodb_table_stats.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/ndb_binlog_index.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/ndb_binlog_index.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/ndb_binlog_index.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/plugin.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/plugin.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/proc.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/proc.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/proc.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/procs_priv.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/procs_priv.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/procs_priv.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/proxies_priv.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/proxies_priv.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/proxies_priv.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/server_cost.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/server_cost.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/servers.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/servers.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/slave_master_info.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/slave_master_info.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/slave_relay_log_info.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/slave_relay_log_info.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/slave_worker_info.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/slave_worker_info.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/slow_log.CSM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/slow_log.CSV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/slow_log.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/tables_priv.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/tables_priv.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/tables_priv.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/time_zone.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/time_zone.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/time_zone_leap_second.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/time_zone_leap_second.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/time_zone_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/time_zone_name.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/time_zone_transition.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/time_zone_transition.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/time_zone_transition_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/time_zone_transition_type.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/user.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/user.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/mysql/user.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/db.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/host_summary.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/host_summary_by_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/host_summary_by_file_io_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/host_summary_by_stages.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/host_summary_by_statement_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/host_summary_by_statement_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/innodb_buffer_stats_by_schema.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/innodb_buffer_stats_by_table.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/innodb_lock_waits.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/io_by_thread_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/io_global_by_file_by_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/io_global_by_file_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/io_global_by_wait_by_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/io_global_by_wait_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/latest_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/memory_by_host_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/memory_by_thread_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/memory_by_user_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/memory_global_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/memory_global_total.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/metrics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/processlist.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/ps_check_lost_instrumentation.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/schema_auto_increment_columns.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/schema_index_statistics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/schema_object_overview.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/schema_redundant_indexes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/schema_table_lock_waits.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/schema_table_statistics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/schema_table_statistics_with_buffer.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/schema_tables_with_full_table_scans.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/schema_unused_indexes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/session.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/session_ssl_status.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/statement_analysis.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/statements_with_errors_or_warnings.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/statements_with_full_table_scans.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/statements_with_runtimes_in_95th_percentile.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/statements_with_sorting.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/statements_with_temp_tables.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/sys_config.TRG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/sys_config.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/sys_config.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/sys_config_insert_set_user.TRN" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/sys_config_update_set_user.TRN" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/user_summary.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/user_summary_by_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/user_summary_by_file_io_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/user_summary_by_stages.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/user_summary_by_statement_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/user_summary_by_statement_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/version.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/wait_classes_global_by_avg_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/wait_classes_global_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/waits_by_host_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/waits_by_user_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/waits_global_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024host_summary.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024host_summary_by_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024host_summary_by_file_io_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024host_summary_by_stages.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024host_summary_by_statement_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024host_summary_by_statement_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024innodb_buffer_stats_by_schema.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024innodb_buffer_stats_by_table.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024innodb_lock_waits.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024io_by_thread_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024io_global_by_file_by_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024io_global_by_file_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024io_global_by_wait_by_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024io_global_by_wait_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024latest_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024memory_by_host_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024memory_by_thread_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024memory_by_user_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024memory_global_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024memory_global_total.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024processlist.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024ps_digest_95th_percentile_by_avg_us.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024ps_digest_avg_latency_distribution.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024ps_schema_table_statistics_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024schema_flattened_keys.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024schema_index_statistics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024schema_table_lock_waits.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024schema_table_statistics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024schema_table_statistics_with_buffer.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024schema_tables_with_full_table_scans.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024session.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024statement_analysis.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024statements_with_errors_or_warnings.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024statements_with_full_table_scans.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024statements_with_runtimes_in_95th_percentile.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024statements_with_sorting.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024statements_with_temp_tables.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024user_summary.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024user_summary_by_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024user_summary_by_file_io_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024user_summary_by_stages.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024user_summary_by_statement_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024user_summary_by_statement_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024wait_classes_global_by_avg_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024wait_classes_global_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024waits_by_host_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024waits_by_user_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-data/sys/x@0024waits_global_by_latency.frm" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93d75168-4a12-4579-a790-a2b385111c32" name="Default Changelist" comment="" />
+      <created>1587887299465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587887299465</updated>
+      <workItem from="1587887300747" duration="255000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="255000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="38" y="-1" width="1882" height="1080" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959655" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.33028457" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

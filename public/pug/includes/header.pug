@@ -1,0 +1,87 @@
++b('div').overlay#overlay
++b('header').header#header
+    .container
+        .row
+            +e('div').wrapper
+                +e('a').logo(href="/" title="На главную")
+                    +e('span').sravni Sravni
+                    +e('span').price Price
+
+                +e('a').menu-btn.button-yellow#menuBtn(href="#" title="Товары")
+                    span.menu-btn
+                        +e('span')
+                    +e('div') товары
+
+                +e('a').sale(href="#" title="Скидки") Скидки
+
+                +e('form').search.input-default
+                    +e('input')#search-input(placeholder="Поиск товара")
+                    +e('button').button-search(type="submit")
+
+                +e('a').select-block(href="#chooseRegion" title="Выбрать регион")
+                    +e('span').select Санкт - Петербург
+
++b('nav').drop-down
+    .container
+        +e('ul')#drop-down
+            div.modal__close-modal
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/washing_machine.png" alt="")
+                    +e('span').desc Бытовая техника
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/sport_tourism.png" alt="")
+                    +e('span').desc Спорт и туризм
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/audio_video.png" alt="")
+                    +e('span').desc Аудио, видео, фото
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/mobile.png" alt="")
+                    +e('span').desc Мобильная связь
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/for_home.png" alt="")
+                    +e('span').desc Все для дома
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/computers.png" alt="")
+                    +e('span').desc Компьютеры
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/for_kids.png" alt="")
+                    +e('span').desc Товары для детей
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/construction_repair.png" alt="")
+                    +e('span').desc Строительство и ремонт
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/auto_moto.png" alt="")
+                    +e('span').desc Авто и мото
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/health_beauty.png" alt="")
+                    +e('span').desc Красота и здоровье
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/clothes_shoes.png" alt="")
+                    +e('span').desc Одежда и обувь
+            +e('li')
+                +e('a').link(href="#" title="#")
+                    +e('div').img-block
+                        +e('img').img(src="img/header/drop/for_office.png" alt="")
+                    +e('span').desc Все для офиса

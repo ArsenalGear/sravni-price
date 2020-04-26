@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>SravniPrice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SravniPrice"><!-- Twitter Card data-->
+    <meta name="twitter:title" content="SravniPrice">
+    <meta name="twitter:description" content="SravniPrice">
+    <meta name="twitter:image" content="/img/content/shares/twitter.jpg"><!-- Open Graph data-->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="SravniPrice">
+    <meta property="og:description" content="SravniPrice">
+    <meta property="og:image" content="/img/content/shares/facebook.jpg"><!-- Vkontakte data-->
+    <link rel="image_src" href="/img/content/shares/vkontakte.jpg"><!-- Favicons-->
+    <link rel="icon" href="/img/content/favicons/favicon.png" sizes="32x32"><!-- Stylesheets-->
+    <link href="css/libs-index.min.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="css/main.css" type="text/css" rel="stylesheet" media="screen"><!-- Scripts-->
+    <script src="js/libs-index.min.js"></script>
+    <script src="js/social.js"></script>
+    <!--script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js')-->
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header__wrapper"><a class="header__logo" href="/" title="На главную"><span class="header__sravni">Sravni</span><span class="header__price">Price</span></a><a class="header__menu-btn button-yellow" id="menuBtn" href="#" title="Товары"><span class="menu-btn"><span></span></span>
+                        <div>товары</div>
+                    </a><a class="header__sale" href="#" title="Скидки">Скидки</a>
+                    <form class="header__search input-default"><input id="search-input" placeholder="Поиск товара" type="text" /><button class="header__button-search" type="submit"></button></form><a class="header__select-block" href="#chooseRegion" title="Выбрать регион"><span class="header__select">Санкт — Петербург</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="drop-down">
+        <div class="container">
+            <ul id="drop-down">
+                <div class="modal__close-modal"></div>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/washing_machine.png" alt="" role="presentation" /></div><span class="drop-down__desc">Бытовая техника</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/sport_tourism.png" alt="" role="presentation" /></div><span class="drop-down__desc">Спорт и туризм</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/audio_video.png" alt="" role="presentation" /></div><span class="drop-down__desc">Аудио, видео, фото</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/mobile.png" alt="" role="presentation" /></div><span class="drop-down__desc">Мобильная связь</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/for_home.png" alt="" role="presentation" /></div><span class="drop-down__desc">Все для дома</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/computers.png" alt="" role="presentation" /></div><span class="drop-down__desc">Компьютеры</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/for_kids.png" alt="" role="presentation" /></div><span class="drop-down__desc">Товары для детей</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/construction_repair.png" alt="" role="presentation" /></div><span class="drop-down__desc">Строительство и ремонт</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/auto_moto.png" alt="" role="presentation" /></div><span class="drop-down__desc">Авто и мото</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/health_beauty.png" alt="" role="presentation" /></div><span class="drop-down__desc">Красота и здоровье</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/clothes_shoes.png" alt="" role="presentation" /></div><span class="drop-down__desc">Одежда и обувь</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/for_office.png" alt="" role="presentation" /></div><span class="drop-down__desc">Все для офиса</span>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container slide-container">
+            <div class="slider" id="slider">
+                <div class="slider__wrapper" id="slider-main">
+                    <div class="slider__slide">
+                        <div class="slider__slide-one">
+                            <div class="slider__wrap square-wrap" style="display: flex; flex-direction: column; justify-content: space-between;">
+                                <div class="slider__wrap wrap-wb wrap-hs"><a class="slider__link link-ws link-hs" href="#" title="sport" style="max-width: 49%"><img class="slider__img" src="img/slider/slide1/sport.png" alt="" role="presentation" /></a><a class="slider__link link-ws link-hs" href="#" title="tech" style="max-width: 49%"><img class="slider__img" src="img/slider/slide1/tech.png" alt="" role="presentation" /></a></div>
+                                <div class="slider__wrap wrap-wb wrap-hs"><a class="slider__link link-wb link-hs" href="#" title="audio"><img class="slider__img" src="img/slider/slide1/audio.png" alt="" role="presentation" /></a></div>
+                            </div>
+                            <div class="slider__wrap wrap-ws wrap-hb"><a class="slider__link link-ws" href="#" title="cell"><img class="slider__img" src="img/slider/slide1/cell.png" alt="" role="presentation" /></a></div>
+                            <div class="slider__wrap wrap-ws wrap-hb" style="display: flex; flex-direction: column; justify-content: space-between;"><a class="slider__link link-ws link-hs" href="#" title="home"><img class="slider__img" src="img/slider/slide1/home.png" alt="" role="presentation" /></a><a class="slider__link link-ws link-hs" href="#" title="comp"><img class="slider__img" src="img/slider/slide1/comp.png" alt="" role="presentation" /></a></div>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__slide-one">
+                            <div class="slider__wrap wrap-wb wrap-hb" style="display: flex; flex-direction: column; justify-content: space-between;">
+                                <div class="slider__wrap wrap-wb wrap-hs"><a class="slider__link link-wb link-hs" href="#" title="accessories"><img class="slider__img" src="img/slider/slider2/accessories.png" alt="" role="presentation" /></a></div>
+                                <div class="slider__wrap wrap-wb wrap-hs"><a class="slider__link link-wb link-hs" href="#" title="souvenirs"><img class="slider__img" src="img/slider/slider2/souvenirs.png" alt="" role="presentation" /></a></div>
+                            </div>
+                            <div class="slider__wrap wrap-ws wrap-hb"><a class="slider__link link-ws" href="#" title="construction"><img class="slider__img" src="img/slider/slider2/construction.png" alt="" role="presentation" /></a></div>
+                            <div class="slider__wrap wrap-ws wrap-hb" style="display: flex; flex-direction: column; justify-content: space-between;"><a class="slider__link link-ws link-hs" href="#" title="for_kids"><img class="slider__img" src="img/slider/slider2/for_kids.png" alt="" role="presentation" /></a><a class="slider__link link-ws link-hs" href="#" title="auto"><img class="slider__img" src="img/slider/slider2/auto.png" alt="" role="presentation" /></a></div>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__slide-one">
+                            <div class="slider__wrap wrap-wb wrap-hb" style="display: flex; flex-direction: column; justify-content: space-between;">
+                                <div class="slider__wrap wrap-wb wrap-hs"><a class="slider__link link-wb link-hs" href="#" title="health_beauty"><img class="slider__img" src="img/slider/slider3/health_beauty.png" alt="" role="presentation" /></a></div>
+                                <div class="slider__wrap wrap-wb wrap-hs"><a class="slider__link link-wb link-hs" href="#" title="books"><img class="slider__img" src="img/slider/slider3/books.png" alt="" role="presentation" /></a></div>
+                            </div>
+                            <div class="slider__wrap wrap-ws wrap-hb" style="display: flex; flex-direction: column; justify-content: space-between;"><a class="slider__link link-ws link-hs" href="#" title="clothes_ shoes"><img class="slider__img" src="img/slider/slider3/clothes_ shoes.png" alt="" role="presentation" /></a><a class="slider__link link-ws link-hs" href="#" title="communication"><img class="slider__img" src="img/slider/slider3/communication.png" alt="" role="presentation" /></a></div>
+                            <div class="slider__wrap wrap-ws wrap-hb" style="display: flex; flex-direction: column; justify-content: space-between;"><a class="slider__link link-ws link-hs" href="#" title="for_office"><img class="slider__img" src="img/slider/slider3/for_office.png" alt="" role="presentation" /></a><a class="slider__link link-ws link-hs" href="#" title="music"><img class="slider__img" src="img/slider/slider3/music.png" alt="" role="presentation" /></a></div>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__slide-one">
+                            <div class="slider__wrap wrap-ws wrap-hb" style="display: flex; flex-direction: column; justify-content: space-between;"><a class="slider__link link-ws link-hs" href="#" title="services"><img class="slider__img" src="img/slider/slider4/services.png" alt="" role="presentation" /></a><a class="slider__link link-ws link-hs" href="#" title="stock"><img class="slider__img" src="img/slider/slider4/stock.png" alt="" role="presentation" /></a></div>
+                            <div class="slider__wrap wrap-wb wrap-hb" style="display: flex; flex-direction: column; justify-content: space-between;"><a class="slider__link link-wb link-hb" href="#" title="smart_house"><img class="slider__img" src="img/slider/slider4/smart_house.png" alt="" role="presentation" /></a></div>
+                            <div class="slider__wrap wrap-ws wrap-hb" style="display: flex; flex-direction: column; justify-content: space-between;"><a class="slider__link link-ws link-hb" href="#" title="presents"><img class="slider__img" src="img/slider/slider4/presents.png" alt="" role="presentation" /></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="popular" id="popular">
+            <div class="container">
+                <div class="row">
+                    <h2 class="popular__title">Популярные товары</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="popular__card">
+                            <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card1.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">5490</span></a></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="popular__card">
+                            <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card2.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой с хорошими качествами и ценой</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">5490</span></a></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="popular__card">
+                            <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card3.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой с хорошими качествами и ценой с хорошими качествами и ценой</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">5490</span></a></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="popular__card">
+                            <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card4.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">5490</span></a></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="popular__card">
+                            <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card5.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">5490</span></a></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="popular__card">
+                            <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card6.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">5490</span></a></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="popular__card">
+                            <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card7.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">5490</span></a></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="popular__card">
+                            <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card8.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">5490</span></a></div>
+                    </div>
+                </div>
+                <div class="popular__show-block"><a class="popular__show-btn button button-blue" href="#" title="показать еще">показать все товары</a></div>
+            </div>
+        </section>
+        <section class="overview" id="overview">
+            <div class="container">
+                <div class="row">
+                    <h2>Обзоры товаров</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                        <div class="overview__big-feed"><a class="overview__img-big-block" href="#" title="#"><img class="overview__img-big" src="img/overview/overviewBig.png" alt="#" title="" /></a>
+                            <div class="overview__overview-main-desc"><a class="overview__title" href="#" title="#">Супер няни: ТОП-5 детских кресел-качалок</a><a class="overview__desc" href="#" title="#">Лучший способ развязать на время руки мамы в первые месяцы жизни малыша</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="overview__small-card" href="#" title="#">
+                                    <div class="overview__img-small-block"><img class="overview__img-small" src="img/overview/overView1.png" alt="#" title="" /></div><span class="overview__desc-small">Круговой обзор: ТОП-5 двухканальных видеорегистраторов Круговой обзор: ТОП-5 двухканальных видеорегистраторов</span>
+                                </a></div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="overview__small-card" href="#" title="#">
+                                    <div class="overview__img-small-block"><img class="overview__img-small" src="img/overview/overView2.png" alt="#" title="" /></div><span class="overview__desc-small">Круговой обзор: ТОП-5 двухканальных видеорегистраторов Круговой обзор: ТОП-5 двухканальных видеорегистраторов</span>
+                                </a></div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="overview__small-card" href="#" title="#">
+                                    <div class="overview__img-small-block"><img class="overview__img-small" src="img/overview/overView3.png" alt="#" title="" /></div><span class="overview__desc-small">Круговой обзор: ТОП-5 двухканальных видеорегистраторов</span>
+                                </a></div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="overview__small-card" href="#" title="#">
+                                    <div class="overview__img-small-block"><img class="overview__img-small" src="img/overview/overView4.png" alt="#" title="" /></div><span class="overview__desc-small">Круговой обзор: ТОП-5 двухканальных видеорегистраторов</span>
+                                </a></div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="overview__small-card" href="#" title="#">
+                                    <div class="overview__img-small-block"><img class="overview__img-small" src="img/overview/overView5.png" alt="#" title="" /></div><span class="overview__desc-small">Круговой обзор: ТОП-5 двухканальных видеорегистраторов</span>
+                                </a></div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="overview__small-card" href="#" title="#">
+                                    <div class="overview__img-small-block"><img class="overview__img-small" src="img/overview/overView6.png" alt="#" title="" /></div><span class="overview__desc-small">Круговой обзор: ТОП-5 двухканальных видеорегистраторов</span>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview__show-block"><a class="overview__show-btn button button-blue" href="#" title="#">все материалы</a></div>
+            </div>
+        </section>
+        <section class="sale" id="sale">
+            <div class="container">
+                <div class="row">
+                    <div class="sale__title-block">
+                        <h2>Товары со скидкой</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sale__slider" id="sale-slider">
+                    <div class="sale__slide-wrapper">
+                        <div class="sale__item-card">
+                            <div class="sale__top-card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="sale__img-block" href="#" title="#"><img class="sale__img" src="img/card/card9.png" alt="#" title="" /></a><a class="sale__title">Рюкзак Trek Planet Colorado 55 Синий</a>
+                                <div class="sale__price-block"><span class="sale__price-with-sale">4 167</span><span class="sale__old-price"><span class="strike">5 555</span></span></div>
+                            </div>
+                            <div class="sale__bottom-card"><a class="sale__btn-sale button button-red" href="#" title="#">Скидка<span class="sale__sale-val">10</span><span class="sale__sale-percent">%</span></a><a class="sale__main-shop">от Яндекс.ру</a></div>
+                        </div>
+                    </div>
+                    <div class="sale__slide-wrapper">
+                        <div class="sale__item-card">
+                            <div class="sale__top-card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="sale__img-block" href="#" title="#"><img class="sale__img" src="img/card/card10.png" alt="#" title="" /></a><a class="sale__title">Рюкзак Trek Planet Colorado 55 Синий</a>
+                                <div class="sale__price-block"><span class="sale__price-with-sale">4 167</span><span class="sale__old-price"><span class="strike">5 555</span></span></div>
+                            </div>
+                            <div class="sale__bottom-card"><a class="sale__btn-sale button button-red" href="#" title="#">Скидка<span class="sale__sale-val">10</span><span class="sale__sale-percent">%</span></a><a class="sale__main-shop">от Яндекс.ру</a></div>
+                        </div>
+                    </div>
+                    <div class="sale__slide-wrapper">
+                        <div class="sale__item-card">
+                            <div class="sale__top-card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="sale__img-block" href="#" title="#"><img class="sale__img" src="img/card/card11.png" alt="#" title="" /></a><a class="sale__title">Рюкзак Trek Planet Colorado 55 Синий</a>
+                                <div class="sale__price-block"><span class="sale__price-with-sale">4 167</span><span class="sale__old-price"><span class="strike">5 555</span></span></div>
+                            </div>
+                            <div class="sale__bottom-card"><a class="sale__btn-sale button button-red" href="#" title="#">Скидка<span class="sale__sale-val">10</span><span class="sale__sale-percent">%</span></a><a class="sale__main-shop">от Яндекс.ру</a></div>
+                        </div>
+                    </div>
+                    <div class="sale__slide-wrapper">
+                        <div class="sale__item-card">
+                            <div class="sale__top-card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="sale__img-block" href="#" title="#"><img class="sale__img" src="img/card/card12.png" alt="#" title="" /></a><a class="sale__title">Рюкзак Trek Planet Colorado 55 Синий</a>
+                                <div class="sale__price-block"><span class="sale__price-with-sale">4 167</span><span class="sale__old-price"><span class="strike">5 555</span></span></div>
+                            </div>
+                            <div class="sale__bottom-card"><a class="sale__btn-sale button button-red" href="#" title="#">Скидка<span class="sale__sale-val">10</span><span class="sale__sale-percent">%</span></a><a class="sale__main-shop">от Яндекс.ру</a></div>
+                        </div>
+                    </div>
+                    <div class="sale__slide-wrapper">
+                        <div class="sale__item-card">
+                            <div class="sale__top-card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="sale__img-block" href="#" title="#"><img class="sale__img" src="img/card/card12.png" alt="#" title="" /></a><a class="sale__title">Рюкзак Trek Planet Colorado 55 Синий</a>
+                                <div class="sale__price-block"><span class="sale__price-with-sale">4 167</span><span class="sale__old-price"><span class="strike">5 555</span></span></div>
+                            </div>
+                            <div class="sale__bottom-card"><a class="sale__btn-sale button button-red" href="#" title="#">Скидка<span class="sale__sale-val">10</span><span class="sale__sale-percent">%</span></a><a class="sale__main-shop">от Яндекс.ру</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="show-block"><a class="show-btn button button-dark" href="#" title="#">показать все товары</a></div>
+        <section class="subscribe" id="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="subscribe__subscribe-social-block">
+                            <h3 class="subscribe__title">Подпишись на все лучшие цены от <span class="subscribe__title-shop" id="shop-calc">5 230</span> <span class="subscribe__title-shop-other">интернет-магазинов:</span></h3>
+                        </div>
+                        <form class="subscribe__form" action="#" name="subscribe" id="subscribeForm">
+                            <h3 class="subscribe__title-sucsess" id="subscrSuccsess">Вы успешно подписались</h3><input class="subscribe__email input-default" required="required" type="email" name="emailaddress" id="email" placeholder="Введите свой e-mail" /><button class="subscribe__btn-subsc button button-yellow" id="sucsessBtn" type="submit" value="подписаться">подписаться</button>
+                        </form>
+                        <div class="social-entry">
+                            <h4 class="social-entry__title">Через соцсети:</h4>
+                            <ul class="social-entry__social-block">
+                                <div data-mobile-view="true" data-share-size="40" data-like-text-enable="false" data-background-alpha="0.0" data-pid="1844693" data-mode="share" data-background-color="#ffffff" data-share-shape="round" data-share-counter-size="12" data-icon-color="#ffffff" data-mobile-sn-ids="fb.vk.tw.ok.wh.tm.vb." data-text-color="#000000" data-buttons-color="#FFFFFF" data-counter-background-color="#ffffff" data-share-counter-type="disable" data-orientation="horizontal" data-following-enable="false" data-sn-ids="fb.vk.tw.ok.wh.tm.vb." data-preview-mobile="false" data-selection-enable="true" data-exclude-show-more="false" data-share-style="1" data-counter-background-alpha="1.0" data-top-button="false" class="uptolike-buttons"></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="shop-add">
+                            <div class="row">
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand2.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand3.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand4.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand5.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand6.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand7.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand8.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card shop-add__shop-card-no-border" href="#addShop" title="#"><span class="shop-add__add">+</span><span class="shop-add__add-shop-link">Подключить магазин</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <div class="container">
+                <div class="row">
+                    <h3 class="service__title">Сервис поиска товаров и цен</h3>
+                    <p class="service__desc-title">Сервис SravniPrice.ru ищет лучшие цены на все, что продается в Москве. Здесь можно сравнить цены на 23 млн товаров и среди 6 тысяч магазинов выбрать именно тот, который предлагает самую низкую стоимость. SravniPrice.ru ежедневно собирает 100 000 скидок и 5000 промокодов со всех интернет-магазинов, чтобы купить выгодно.</p>
+                    <p class="service__desc">Мы не продаём товары и не организовываем их доставку, мы работаем для того, чтобы покупатель мог быстро и удобно найти самое выгодное предложение. Для тех, кто определяется с выбором, в каждом разделе есть подбор по параметрам и возможность сравнить товары между собой. Доступен и удобный текстовый поиск, позволяющий искать как нужные разделы, так и конкретные товары по названию. А на странице каждой модели есть подробная информация, которая поможет принять решение: описание, технические характеристики, фото и видео, полезные ссылки и отзывы. Там же находится блок «Где купить?» со списком интернет-магазинов, ценами и прямыми ссылками на страницу покупкию</p>
+                    <p class="service__desc">К системе SravniPrice.ru подключено более 1000 магазинов, данные по которым постоянно обновляются. Благодаря этому вы сможете не только выбрать подходящий товар, но и купить его по самым выгодным условиям!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <p class="sub-footer__all-rights">© 2019 SravniPrice.ru All rights reserved.</p><a class="sub-footer__add-shop" href="#addShop" title="#"><span class="sub-footer__plus">+</span><span class="sub-footer__desc-add-shop">Подключить магазин</span></a>
+            </div>
+        </div>
+    </div>
+    <form class="add-shop popup white-popup-block mfp-hide" id="addShop" autocomplete="off">
+        <div class="add-shop__header">
+            <h2 class="add-shop__title">Оставить заявку онлайн</h2>
+            <div class="add-shop__close-btn"><img class="add-shop__close" src="img/theme/icons/closeModal.svg" alt="закрыть" title="" /></div>
+        </div>
+        <div class="add-shop__body"><input class="add-shop__input-default input-default" id="fio" type="text" name="fio" placeholder="ФИО" required="required" /><input class="add-shop__input-default input-default" id="phone" type="tel" name="tel" placeholder="Телефон" required="required" /><input class="add-shop__input-default input-default" id="eMail" type="email" name="eMail" placeholder="E - mail" required="required" /><textarea class="add-shop__textarea-default input-default" id="message" rows="7" name="message" placeholder="Сообщение" required="required"></textarea>
+            <div class="add-shop__send-block">
+                <div class="add-shop__confirm-block"><label class="label-checkbox"><input class="label-checkbox__input-hidden" required="required" type="checkbox" id="confirmData" name="confirmData" /><span class="label-checkbox__label-span"></span></label>
+                    <p>Я соглашаюсь на обработку персональных данных</p>
+                </div><button class="add-shop__button button button-yellow" type="submit" value="отправить">отправить</button>
+            </div>
+        </div>
+    </form>
+    <form class="add-shop popup white-popup-block mfp-hide" id="chooseRegion" autocomplete="off">
+        <div class="add-shop__header">
+            <h2 class="add-shop__title">Выбор города</h2>
+            <div class="add-shop__close-btn"><img class="add-shop__close" src="img/theme/icons/closeModal.svg" alt="закрыть" title="" /></div>
+        </div>
+        <div class="add-shop__body">
+            <div class="add-shop__row">
+                <p class="add-shop__country">Страна:</p>
+                <p class="add-shop__country-choose">Россия</p>
+            </div>
+            <div class="add-shop__row">
+                <p class="add-shop__country">Уточнить регион:</p><select class="add-shop__select-country" id="countrySelect" name="country" data-placeholder=""></select>
+            </div>
+            <div class="add-shop__row">
+                <p class="add-shop__country">Выбрать город:</p>
+            </div>
+            <div class="add-shop__regions-block input-default"></div>
+        </div>
+    </form>
+    <form class="add-shop popup white-popup-block mfp-hide" id="thanks" autocomplete="off">
+        <div class="add-shop__header">
+            <h2 class="add-shop__title">Спасибо!</h2>
+            <div class="add-shop__close-btn"><img class="add-shop__close" src="img/theme/icons/closeModal.svg" alt="закрыть" title="" /></div>
+        </div>
+        <div class="add-shop__body">
+            <p class="add-shop__thanks-text">Ваша заявка принята. <br> Наш специалист рассмотрит ваше обращение и обязательно свяжется с вами в ближайшее время.</p>
+        </div>
+    </form>
+</body>
+
+</html>

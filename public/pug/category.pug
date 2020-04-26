@@ -1,0 +1,721 @@
+extends layouts/site-inside
+
+block content
+    +b('div').breadcrumbs
+        .container
+            .row
+                .col-12
+                    +e('div').wrapper
+                        +e('a').link Главная
+                        +e('span').divider /
+                        +e('a').link Компьютеры
+                        +e('span').divider /
+                        +e('span').link.breadcrumbs__link-last Ноутбуки
+    +b('section').title-goods
+        .container
+            .row
+                .col-12
+                    +e('h1').title Ноутбуки
+                .col-12
+                    +e('p').choose <span> Уточнить выбор </span>
+
+    +b('div').filter-section
+        .container
+            .row
+                .col-12.col-xl-3
+                    +b('ul').filter
+                        +e('li').goods
+                            +e('div').link-block
+                                +e('a').link.active(href="#" title="#") Ноутбуки
+                                +e('span').amount-block
+                                    +e('span').left-bracker (
+                                    +e('span').amount 12
+                                    +e('span').right-bracker )
+                        +e('li').goods
+                            +e('div').link-block
+                                +e('a').link(href="#" title="#") Планшеты
+                                +e('span').amount-block
+                                    +e('span').left-bracker (
+                                    +e('span').amount 12
+                                    +e('span').right-bracker )
+                        +e('li').goods
+                            +e('div').link-block
+                                +e('a').link(href="#" title="#") Серверы
+                                +e('span').amount-block
+                                    +e('span').left-bracker (
+                                    +e('span').amount 12
+                                    +e('span').right-bracker )
+                        +e('li').goods
+                            +e('div').link-block
+                                +e('a').link(href="#" title="#") Тонкие клиенты
+                                +e('span').amount-block
+                                    +e('span').left-bracker (
+                                    +e('span').amount 12
+                                    +e('span').right-bracker )
+                        +e('li').goods
+                            +e('div').link-block
+                                +e('a').link(href="#" title="#") Игровые приставки
+                                +e('span').amount-block
+                                    +e('span').left-bracker (
+                                    +e('span').amount 12
+                                    +e('span').right-bracker )
+                        +e('li').goods
+                            +e('div').link-block
+                                +e('a').link(href="#" title="#") Моноблоки
+                                +e('span').amount-block
+                                    +e('span').left-bracker (
+                                    +e('span').amount 12
+                                    +e('span').right-bracker )
+                        +e('li').goods
+                            +e('div').link-block
+                                +e('a').link(href="#" title="#") Настольные компьютеры
+                                +e('span').amount-block
+                                    +e('span').left-bracker (
+                                    +e('span').amount 12
+                                    +e('span').right-bracker )
+                        +e('li').goods
+                            +e('div').link-block
+                                +e('a').link(href="#" title="#") Комплектующие
+                                +e('span').amount-block
+                                    +e('span').left-bracker (
+                                    +e('span').amount 12
+                                    +e('span').right-bracker )
+                    +b('section').selection
+                        +e('h4').title Подбор по параметрам
+
+                        +e('div').wrapper
+                            +b('section').ui-slider
+                                +e('div').mini-title-block
+                                    +e('h6').mini-title Цена. грн.
+                                    +e('img').arrow(src="img/theme/icons/arrow.svg")
+                                +e('div').amounts
+                                    +e('div').slider
+                                        +e('div').slider-wrapper
+                                            +e('div')#slider.main-slider
+                                        +e('div').input-wrapper
+                                            +e('span').from от
+                                            +e('input').from-input(placeholder="0"  maxlength="6" type="text" value="")
+                                            +e('span').to до
+                                            +e('input').to-input(placeholder="25 000"  maxlength="6" type="text" value="")
+
+                            +b('section').choose
+                                +e('div').mini-title-block
+                                    +e('h6').mini-title Цена. грн.
+                                    +e('img').arrow(src="img/theme/icons/arrow.svg")
+                                +e('ul').amounts
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="apple")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand Apple
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="Lenovo")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand Lenovo Lenovo Lenovo LenovoLenovo Lenovo Lenovo
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="Dell")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand Dell
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="MSI")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand MSI
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="HP")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand HP
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('button').button.button.button-blue.show-more(type="button" value="показать еще") показать еще
+                                    +e('li').row.hide
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="HP")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand Acer
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row.hide
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="HP")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand Asus
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                            +b('section').choose
+                                +e('div').mini-title-block
+                                    +e('h6').mini-title Тип
+                                    +e('img').arrow(src="img/theme/icons/arrow.svg")
+                                +e('ul').amounts
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="Tablet PC")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand Tablet PC
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="note")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand Ноутбук
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="ultra")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand Ультрабук
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                            +b('section').choose
+                                +e('div').mini-title-block
+                                    +e('h6').mini-title Разрешение экрана
+                                    +e('img').arrow(src="img/theme/icons/arrow.svg")
+                                +e('ul').amounts
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="3840 x 2160")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand 3840 x 2160
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="1920 x 1080")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand 1920 x 1080
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="1366 x 768")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand 1366 x 768
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="1600 x 900")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand 1600 x 900
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="1280 x 800")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand 1280 x 800
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                            +b('section').choose
+                                +e('div').mini-title-block
+                                    +e('h6').mini-title Тип покрытия экрана
+                                    +e('img').arrow(src="img/theme/icons/arrow.svg")
+                                +e('ul').amounts
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="gl")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand Глянцевое
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="matt")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand Матовое
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                            +b('section').choose
+                                +e('div').mini-title-block
+                                    +e('h6').mini-title Тип матрицы
+                                    +e('img').arrow(src="img/theme/icons/arrow.svg")
+                                +e('ul').amounts
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="TFT *VA")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand TFT *VA
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="TFT IPS")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand TFT IPS
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="TFT PLS")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand TFT PLS
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="TFT TN")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand TFT TN
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+
+                            +e('button').button.button.button-blue(type="button" value="") ВСЕ ПАРАМЕТРЫ +
+
+                            +b('section').choose.hide
+                                +e('div').mini-title-block
+                                    +e('h6').mini-title Количество ядер процессора
+                                    +e('img').arrow(src="img/theme/icons/arrow.svg")
+                                +e('ul').amounts
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="2")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand 2
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="4")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand 4
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="5")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand 5
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="8")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand 8
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                            +b('section').choose.hide
+                                +e('div').mini-title-block
+                                    +e('h6').mini-title Видеоадаптер
+                                    +e('img').arrow(src="img/theme/icons/arrow.svg")
+                                +e('ul').amounts
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="AMD")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand AMD
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="Nvidia")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand NVIDIA
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="ATI")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand ATI
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+                                    +e('li').row
+                                        +e('label').label.label-checkbox
+                                            +e('input').input.label-checkbox__input-hidden(type="checkbox" name="intel")
+                                            +e('span').check.label-checkbox__label-span
+                                            +e('span').brand INTEL
+                                            +e('span').amount-block
+                                                +e('span').left-bracker (
+                                                +e('span').amount 13
+                                                +e('span').right-bracker )
+
+
+                .col-12.col-xl-9
+                    +b('div').sortable
+                        +e('div').left-side
+                            +e('span').sortBy Сортировать по:
+                            +e('a').link.active(href="#" title="популярности") популярности
+                            +e('a').link(href="#" title="цене") цене
+                            +e('a').link(href="#" title="новизне") новизне
+                        +e('div').right-side
+                            +e('a').cards.active(href="#" title="таблица")
+                                +e('span').lt
+                                +e('span').rt
+                                +e('span').ld
+                                +e('span').rd
+                            +e('a').tables.no-active(href="/category-list.html" title="список")
+                                +e('span').first
+                                +e('span').second
+                                +e('span').third
+                    +b('div').popular.light-theme#popular
+                        .container
+                            .row
+                                .col-12.col-sm-6.col-md-6.col-lg-4
+                                    +e('div').card
+                                        +e('a').img-link(href="#" title="#")
+                                            +e('img').img(src="img/card/card1.png" alt="#")
+                                        +e('div').reverse-block
+                                            +e('a').img-link-desc(href="#" title="#") Товар с
+                                            +b('div').rating
+                                                +e('div').stars-block
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('div').feed-block
+                                                    +e('span').feed-count 5
+                                                    +e('span').feed-title отзывов
+                                        +e('div').reverse-right-block
+                                            +e('div').price-shop <span class="popular__from-word">от</span>
+                                                +e('span').total-price.shop 999
+                                            +e('div').shops
+                                                +e('span').shop-in в
+                                                +e('span').shop-count 47
+                                                +e('span').shop-title магазинах
+                                            +e('a').link-shop.button.button-yellow Сравнить цены
+                                .col-12.col-sm-6.col-md-6.col-lg-4
+                                    +e('div').card
+                                        +e('a').img-link(href="#" title="#")
+                                            +e('img').img(src="img/card/card1.png" alt="#")
+                                        +e('div').reverse-block
+                                            +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой
+                                            +b('div').rating
+                                                +e('div').stars-block
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('div').feed-block
+                                                    +e('span').feed-count 55
+                                                    +e('span').feed-title отзывов
+                                        +e('div').reverse-right-block
+                                            +e('div').price-shop <span class="popular__from-word">от</span>
+                                                +e('span').total-price.shop 10 000
+                                            +e('div').shops
+                                                +e('span').shop-in в
+                                                +e('span').shop-count 47
+                                                +e('span').shop-title магазинах
+                                            +e('a').link-shop.button.button-yellow Сравнить цены
+                                .col-12.col-sm-6.col-md-6.col-lg-4
+                                    +e('div').card
+                                        +e('img').sale-img(src="img/theme/icons/persent.png" alt="persent")
+                                        +e('a').img-link(href="#" title="#")
+                                            +e('img').img(src="img/card/card1.png" alt="#")
+                                        +e('div').reverse-block
+                                            +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой Товар с хорошими качествами и ценой Товар с хорошими качествами и ценой Товар с хорошими качествами и ценой
+                                            +b('div').rating
+                                                +e('div').stars-block
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('div').feed-block
+                                                    +e('span').feed-count 555
+                                                    +e('span').feed-title отзывов
+                                        +e('div').reverse-right-block
+                                            +e('div').price-shop.discount <span class="popular__from-word">от</span>
+                                                +e('span').total-price.shop.discount 99 949
+                                                +e('span').old-price <span class="strike">99 999</span>
+                                            +e('div').shops
+                                                +e('span').shop-in в
+                                                +e('span').shop-count 47
+                                                +e('span').shop-title магазинах
+                                            +e('a').link-shop.button.button-yellow Сравнить цены
+                                .col-12.col-sm-6.col-md-6.col-lg-4
+                                    +e('div').card
+                                        +e('a').img-link(href="#" title="#")
+                                            +e('img').img(src="img/card/card1.png" alt="#")
+                                        +e('div').reverse-block
+                                            +e('a').img-link-desc(href="#" title="#") Товар с
+                                            +b('div').rating
+                                                +e('div').stars-block
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('div').feed-block
+                                                    +e('span').feed-count 5
+                                                    +e('span').feed-title отзывов
+                                        +e('div').reverse-right-block
+                                            +e('div').price-shop <span class="popular__from-word">от</span>
+                                                +e('span').total-price.shop 999
+                                            +e('div').shops
+                                                +e('span').shop-in в
+                                                +e('span').shop-count 47
+                                                +e('span').shop-title магазинах
+                                            +e('a').link-shop.button.button-yellow Сравнить цены
+                                .col-12.col-sm-6.col-md-6.col-lg-4
+                                    +e('div').card
+                                        +e('a').img-link(href="#" title="#")
+                                            +e('img').img(src="img/card/card1.png" alt="#")
+                                        +e('div').reverse-block
+                                            +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой
+                                            +b('div').rating
+                                                +e('div').stars-block
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('div').feed-block
+                                                    +e('span').feed-count 55
+                                                    +e('span').feed-title отзывов
+                                        +e('div').reverse-right-block
+                                            +e('div').price-shop <span class="popular__from-word">от</span>
+                                                +e('span').total-price.shop 10 000
+                                            +e('div').shops
+                                                +e('span').shop-in в
+                                                +e('span').shop-count 47
+                                                +e('span').shop-title магазинах
+                                            +e('a').link-shop.button.button-yellow Сравнить цены
+                                .col-12.col-sm-6.col-md-6.col-lg-4
+                                    +e('div').card
+                                        +e('img').sale-img(src="img/theme/icons/persent.png" alt="persent")
+                                        +e('a').img-link(href="#" title="#")
+                                            +e('img').img(src="img/card/card1.png" alt="#")
+                                        +e('div').reverse-block
+                                            +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой Товар с хорошими качествами и ценой
+                                            +b('div').rating
+                                                +e('div').stars-block
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('div').feed-block
+                                                    +e('span').feed-count 555
+                                                    +e('span').feed-title отзывов
+                                        +e('div').reverse-right-block
+                                            +e('div').price-shop.discount <span class="popular__from-word">от</span>
+                                                +e('span').total-price.shop.discount 999 490
+                                                +e('span').old-price <span class="strike">999 999</span>
+                                            +e('div').shops
+                                                +e('span').shop-in в
+                                                +e('span').shop-count 47
+                                                +e('span').shop-title магазинах
+                                            +e('a').link-shop.button.button-yellow Сравнить цены
+                                .col-12.col-sm-6.col-md-6.col-lg-4
+                                    +e('div').card
+                                        +e('a').img-link(href="#" title="#")
+                                            +e('img').img(src="img/card/card1.png" alt="#")
+                                        +e('div').reverse-block
+                                            +e('a').img-link-desc(href="#" title="#") Товар с
+                                            +b('div').rating
+                                                +e('div').stars-block
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('div').feed-block
+                                                    +e('span').feed-count 5
+                                                    +e('span').feed-title отзывов
+                                        +e('div').reverse-right-block
+                                            +e('div').price-shop <span class="popular__from-word">от</span>
+                                                +e('span').total-price.shop 999
+                                            +e('div').shops
+                                                +e('span').shop-in в
+                                                +e('span').shop-count 47
+                                                +e('span').shop-title магазинах
+                                            +e('a').link-shop.button.button-yellow Сравнить цены
+                                .col-12.col-sm-6.col-md-6.col-lg-4
+                                    +e('div').card
+                                        +e('a').img-link(href="#" title="#")
+                                            +e('img').img(src="img/card/card1.png" alt="#")
+                                        +e('div').reverse-block
+                                            +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой
+                                            +b('div').rating
+                                                +e('div').stars-block
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('div').feed-block
+                                                    +e('span').feed-count 55
+                                                    +e('span').feed-title отзывов
+                                        +e('div').reverse-right-block
+                                            +e('div').price-shop <span class="popular__from-word">от</span>
+                                                +e('span').total-price.shop 10 000
+                                            +e('div').shops
+                                                +e('span').shop-in в
+                                                +e('span').shop-count 47
+                                                +e('span').shop-title магазинах
+                                            +e('a').link-shop.button.button-yellow Сравнить цены
+                                .col-12.col-sm-6.col-md-6.col-lg-4
+                                    +e('div').card
+                                        +e('img').sale-img(src="img/theme/icons/persent.png" alt="persent")
+                                        +e('a').img-link(href="#" title="#")
+                                            +e('img').img(src="img/card/card1.png" alt="#")
+                                        +e('div').reverse-block
+                                            +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой Товар с хорошими качествами и ценой
+                                            +b('div').rating
+                                                +e('div').stars-block
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('div').feed-block
+                                                    +e('span').feed-count 555
+                                                    +e('span').feed-title отзывов
+                                        +e('div').reverse-right-block
+                                            +e('div').price-shop.discount <span class="popular__from-word">от</span>
+                                                +e('span').total-price.shop.discount 999 490
+                                                +e('span').old-price <span class="strike">999 999</span>
+                                            +e('div').shops
+                                                +e('span').shop-in в
+                                                +e('span').shop-count 47
+                                                +e('span').shop-title магазинах
+                                            +e('a').link-shop.button.button-yellow Сравнить цены
+                    +b('div').pagination
+                        +e('ul')
+                            +e('li').arrow-left
+                                +e('a').link#prev(href="#" title="назад") <
+                            +e('li').item.active
+                                +e('a').link(href="#" title="1")
+                                    +e('span') 1
+                            +e('li').item
+                                +e('a').link(href="#" title="2")
+                                    +e('span') 2
+                            +e('li').item
+                                +e('a').link(href="#" title="3")
+                                    +e('span') 3
+                            +e('li').item
+                                +e('a').link(href="#" title="4")
+                                    +e('span') 4
+                            +e('li').item
+                                +e('a').link(href="#" title="5")
+                                    +e('span') 5
+                            +e('li').arrow-right
+                                +e('a').link#next(href="#" title="вперед") >
+
+    +b('section').subscribe#subscribe
+        .container
+            .row
+                .col-12.col-sm-12.col-md-12.col-lg-6
+                    +e('div').subscribe-social-block
+                        +e('h3').title Подпишись на все лучшие цены от <span class="subscribe__title-shop" id="shop-calc">5 230</span> <span class="subscribe__title-shop-other">интернет-магазинов:</span>
+
+                    +e('form').form(action="#" name="subscribe" id="subscribeForm")
+                        +e('h3').title-sucsess#subscrSuccsess Вы успешно подписались
+                        +e('input').email.input-default(required type="email" name="emailaddress" id="email" placeholder="Введите свой e-mail")
+                        +e('button').btn-subsc.button.button-yellow(id="sucsessBtn" type="submit" value="подписаться") подписаться
+
+                    +b('div').social-entry
+                        +e('h4').title Через соцсети:
+                        +e('ul').social-block
+                          <div data-mobile-view="true" data-share-size="40" data-like-text-enable="false" data-background-alpha="0.0" data-pid="1844693" data-mode="share" data-background-color="#ffffff" data-share-shape="round" data-share-counter-size="12" data-icon-color="#ffffff" data-mobile-sn-ids="fb.vk.tw.ok.wh.tm.vb." data-text-color="#000000" data-buttons-color="#FFFFFF" data-counter-background-color="#ffffff" data-share-counter-type="disable" data-orientation="horizontal" data-following-enable="false" data-sn-ids="fb.vk.tw.ok.wh.tm.vb." data-preview-mobile="false" data-selection-enable="true" data-exclude-show-more="false" data-share-style="1" data-counter-background-alpha="1.0" data-top-button="false" class="uptolike-buttons" ></div>
+
+                .col-12.col-sm-12.col-md-12.col-lg-6
+                    +b('div').shop-add
+                        .row
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand2.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand3.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand4.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand5.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand6.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand7.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand8.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card.shop-add__shop-card-no-border(href="#addShop" title="#")
+                                    +e('span').add +
+                                    +e('span').add-shop-link Подключить магазин
+    +b('section').service#service
+        .container
+            .row
+                +e('h3').title Сервис поиска товаров и цен
+                +e('p').desc-title Сервис SravniPrice.ru ищет лучшие цены на все, что продается в Москве. Здесь можно сравнить цены на 23 млн товаров и среди 6 тысяч магазинов выбрать именно тот, который предлагает самую низкую стоимость. SravniPrice.ru ежедневно собирает 100 000 скидок и 5000 промокодов со всех интернет-магазинов, чтобы купить выгодно.
+                +e('p').desc Мы не продаём товары и не организовываем их доставку, мы работаем для того, чтобы покупатель мог быстро и удобно найти самое выгодное предложение. Для тех, кто определяется с выбором, в каждом разделе есть подбор по параметрам и возможность сравнить товары между собой. Доступен и удобный текстовый поиск, позволяющий искать как нужные разделы, так и конкретные товары по названию. А на странице каждой модели есть подробная информация, которая поможет принять решение: описание, технические характеристики, фото и видео, полезные ссылки и отзывы. Там же находится блок «Где купить?» со списком интернет-магазинов, ценами и прямыми ссылками на страницу покупкию
+                +e('p').desc К системе SravniPrice.ru подключено более 1000 магазинов, данные по которым постоянно обновляются. Благодаря этому вы сможете не только выбрать подходящий товар, но и купить его по самым выгодным условиям!

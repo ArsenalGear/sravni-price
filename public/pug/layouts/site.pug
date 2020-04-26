@@ -1,0 +1,13 @@
+doctype html
+html(lang='RU-ru')
+    include ../includes/bemto.pug/bemto
+    include ../includes/head
+    body
+        include ../includes/header
+        include ../blocks/breadcrumbs
+        block breadcrumbs
+        main
+            block content
+
+        include ../includes/footer
+        include ../includes/modals

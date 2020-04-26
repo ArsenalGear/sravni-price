@@ -1,0 +1,11 @@
+mixin breadcrumbs(...items)
+    - var breadcrumbsLength = items.length - 1
+    +b('div').breadcrumbs
+        .container
+            +e('ol').list
+                each item, index in items
+                    if index == breadcrumbsLength
+                        +e('li').item= item
+                    else
+                        +e('li').item
+                            +e('a')(href='#')= item

@@ -1,0 +1,53 @@
+.form-group img, #dataTable img {
+    background: #c5c5c5;
+}
+
+.custom-relation {
+    clear:both;
+}
+
+.database-items__list {
+    overflow: hidden;
+    height: 171px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.old-items__list > ul > li,
+.new-items-products__list > ul > li,
+.delete-items-products__list > ul > li,
+.new-items-categories__list > ul > li,
+.delete-items-categories__list > ul > li,
+.new-items__list > ul > li,
+.delete-items__list > ul > li,
+.database-items__list > ul > li,
+.delete-items__list > ul > li,
+.new-items-filter-options__list > ul > li,
+.delete-items-filter-options__list > ul > li
+{
+    list-style-type: none;
+    margin-left: -20px;
+    padding: 5px;
+    margin-top: 1px;
+    border-radius: 3px;
+}
+
+.database-items__list > ul > li {
+    cursor:pointer;
+}
+
+.add-item-to-delete-items,
+.add-filter-cancel {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.active-item {
+    background: #00a700;
+    color: white;
+}
+
+
+.panel-body {
+    word-break: break-word;
+}

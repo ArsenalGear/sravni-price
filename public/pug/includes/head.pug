@@ -1,0 +1,43 @@
+//- info vars
+- var companyname = 'Калькулятор'
+- var tel = '+78001111111'
+- var phone = '8-800-770-78-37'
+- var email = 'info@example.ru'
+- var title = 'SravniPrice'
+- var description = 'SravniPrice'
+
+block vars
+
+head
+    meta(charset='utf-8')
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content=description)
+
+    // Twitter Card data
+    meta(name='twitter:title', content=title)
+    meta(name='twitter:description', content=description)
+    meta(name='twitter:image', content='/img/content/shares/twitter.jpg')
+
+    // Open Graph data
+    meta(property='og:type', content='article')
+    meta(property='og:title', content=title)
+    meta(property='og:description', content=description)
+    meta(property='og:image', content='/img/content/shares/facebook.jpg')
+
+    // Vkontakte data
+    link(rel='image_src', href='/img/content/shares/vkontakte.jpg')
+
+    // Favicons
+    link(rel='icon', href='/img/content/favicons/favicon.png', sizes='32x32')
+
+    // Stylesheets
+    link(href='css/libs-index.min.css', type='text/css', rel='stylesheet', media='screen')
+    link(href='css/main.css', type='text/css', rel='stylesheet', media='screen')
+
+    // Scripts
+
+    script(src='js/libs-index.min.js')
+    script(src='js/social.js')
+    //script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js')
+    script(src='js/common.js')

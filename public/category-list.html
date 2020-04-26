@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>SravniPrice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SravniPrice">
+    <!-- Twitter Card data-->
+    <meta name="twitter:title" content="SravniPrice">
+    <meta name="twitter:description" content="SravniPrice">
+    <meta name="twitter:image" content="/img/content/shares/twitter.jpg">
+    <!-- Open Graph data-->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="SravniPrice">
+    <meta property="og:description" content="SravniPrice">
+    <meta property="og:image" content="/img/content/shares/facebook.jpg">
+    <!-- Vkontakte data-->
+    <link rel="image_src" href="/img/content/shares/vkontakte.jpg">
+    <!-- Favicons-->
+    <link rel="icon" href="/img/content/favicons/favicon.png" sizes="32x32">
+    <!-- Stylesheets-->
+    <link href="css/libs-inside.min.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="css/jq-ui-slider/jquery-ui.min.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="css/main.css" type="text/css" rel="stylesheet" media="screen">
+    <!-- Scripts-->
+    <script src="js/libs-inside.min.js"></script>
+    <script src="js/jq-ui-slider/jquery-ui.min.js"></script>
+    <!--script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js')-->
+    <script src="js/common-inside.js"></script>
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header__wrapper">
+                    <a class="header__logo" href="/" title="На главную">
+                        <span class="header__sravni">Sravni</span>
+                        <span class="header__price">Price</span>
+                    </a>
+                    <a class="header__menu-btn button-yellow" id="menuBtn" href="#" title="Товары">
+                        <span class="menu-btn">
+                            <span></span>
+                        </span>
+                        <div>товары</div>
+                    </a>
+                    <a class="header__sale" href="#" title="Скидки">Скидки</a>
+                    <form class="header__search input-default">
+                        <input id="search-input" placeholder="Поиск товара" type="text" />
+                        <button class="header__button-search" type="submit"></button>
+                    </form>
+                    <a class="header__select-block" href="#chooseRegion" title="Выбрать регион">
+                        <span class="header__select">Санкт — Петербург</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="drop-down">
+        <div class="container">
+            <ul id="drop-down">
+                <div class="modal__close-modal"></div>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/washing_machine.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Бытовая техника</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/sport_tourism.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Спорт и туризм</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/audio_video.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Аудио, видео, фото</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/mobile.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Мобильная связь</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/for_home.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Все для дома</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/computers.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Компьютеры</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/for_kids.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Товары для детей</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/construction_repair.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Строительство и ремонт</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/auto_moto.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Авто и мото</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/health_beauty.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Красота и здоровье</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/clothes_shoes.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Одежда и обувь</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block">
+                            <img class="drop-down__img" src="img/header/drop/for_office.png" alt="" role="presentation" />
+                        </div>
+                        <span class="drop-down__desc">Все для офиса</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumbs__wrapper">
+                            <a class="breadcrumbs__link">Главная</a>
+                            <span class="breadcrumbs__divider">/</span>
+                            <a class="breadcrumbs__link">Компьютеры</a>
+                            <span class="breadcrumbs__divider">/</span>
+                            <span class="breadcrumbs__link breadcrumbs__link-last">Ноутбуки</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="title-goods">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-goods__title">Ноутбуки</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="title-goods__choose">
+                            <span> Уточнить выбор </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="filter-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-3">
+                        <ul class="filter">
+                            <li class="filter__goods">
+                                <div class="filter__link-block">
+                                    <a class="filter__link active" href="#" title="#">Ноутбуки</a>
+                                    <span class="filter__amount-block">
+                                        <span class="filter__left-bracker">(</span>
+                                        <span class="filter__amount">ищем…</span>
+                                        <span class="filter__right-bracker">)</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="filter__goods">
+                                <div class="filter__link-block">
+                                    <a class="filter__link" href="#" title="#">Планшеты</a>
+                                    <span class="filter__amount-block">
+                                        <span class="filter__left-bracker">(</span>
+                                        <span class="filter__amount">ищем…</span>
+                                        <span class="filter__right-bracker">)</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="filter__goods">
+                                <div class="filter__link-block">
+                                    <a class="filter__link" href="#" title="#">Серверы</a>
+                                    <span class="filter__amount-block">
+                                        <span class="filter__left-bracker">(</span>
+                                        <span class="filter__amount">ищем…</span>
+                                        <span class="filter__right-bracker">)</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="filter__goods">
+                                <div class="filter__link-block">
+                                    <a class="filter__link" href="#" title="#">Тонкие клиенты</a>
+                                    <span class="filter__amount-block">
+                                        <span class="filter__left-bracker">(</span>
+                                        <span class="filter__amount">ищем…</span>
+                                        <span class="filter__right-bracker">)</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="filter__goods">
+                                <div class="filter__link-block">
+                                    <a class="filter__link" href="#" title="#">Игровые приставки</a>
+                                    <span class="filter__amount-block">
+                                        <span class="filter__left-bracker">(</span>
+                                        <span class="filter__amount">ищем…</span>
+                                        <span class="filter__right-bracker">)</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="filter__goods">
+                                <div class="filter__link-block">
+                                    <a class="filter__link" href="#" title="#">Моноблоки</a>
+                                    <span class="filter__amount-block">
+                                        <span class="filter__left-bracker">(</span>
+                                        <span class="filter__amount">ищем…</span>
+                                        <span class="filter__right-bracker">)</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="filter__goods">
+                                <div class="filter__link-block">
+                                    <a class="filter__link" href="#" title="#">Настольные компьютеры</a>
+                                    <span class="filter__amount-block">
+                                        <span class="filter__left-bracker">(</span>
+                                        <span class="filter__amount">ищем…</span>
+                                        <span class="filter__right-bracker">)</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="filter__goods">
+                                <div class="filter__link-block">
+                                    <a class="filter__link" href="#" title="#">Комплектующие</a>
+                                    <span class="filter__amount-block">
+                                        <span class="filter__left-bracker">(</span>
+                                        <span class="filter__amount">ищем…</span>
+                                        <span class="filter__right-bracker">)</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                        <section class="selection">
+                            <h4 class="selection__title">Подбор по параметрам</h4>
+                            <div class="selection__wrapper">
+                                <section class="ui-slider">
+                                    <h6 class="ui-slider__mini-title">Цена. грн.</h6>
+                                    <img class="ui-slider__arrow" src="img/theme/icons/arrow.svg" alt="" role="presentation" />
+                                    <div class="ui-slider__amounts">
+                                        <div class="ui-slider__slider">
+                                            <div class="ui-slider__slider-wrapper">
+                                                <div class="ui-slider__main-slider" id="slider"></div>
+                                            </div>
+                                            <div class="ui-slider__input-wrapper">
+                                                <span class="ui-slider__from">
+                                                    <span class="popular__from-word">от</span>
+                                                </span>
+                                                <input class="ui-slider__from-input" placeholder="0" type="text" maxlength="6" value="" />
+                                                <span class="ui-slider__to">до</span>
+                                                <input class="ui-slider__to-input" placeholder="25 000" type="text" maxlength="6" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="choose">
+                                    <h6 class="choose__mini-title">Цена. грн.</h6>
+                                    <img class="choose__arrow" src="img/theme/icons/arrow.svg" alt="" role="presentation" />
+                                    <ul class="choose__amounts">
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="apple" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">Apple</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="Lenovo" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">Lenovo</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="Dell" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">Dell</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="MSI" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">MSI</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="HP" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">HP</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <button class="choose__button button button-blue show-more" type="button" value="показать еще">показать еще</button>
+                                        </li>
+                                        <li class="choose__row hide">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="HP" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">Acer</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row hide">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="HP" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">Asus</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="choose">
+                                    <h6 class="choose__mini-title">Тип</h6>
+                                    <img class="choose__arrow" src="img/theme/icons/arrow.svg" alt="" role="presentation" />
+                                    <ul class="choose__amounts">
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="Tablet PC" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">Tablet PC</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="note" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">Ноутбук</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="ultra" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">Ультрабук</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="choose">
+                                    <h6 class="choose__mini-title">Разрешение экрана</h6>
+                                    <img class="choose__arrow" src="img/theme/icons/arrow.svg" alt="" role="presentation" />
+                                    <ul class="choose__amounts">
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="3840 x 2160" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">3840×2160</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="1920 x 1080" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">1920×1080</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="1366 x 768" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">1366×768</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="1600 x 900" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">1600×900</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="1280 x 800" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">1280×800</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="choose">
+                                    <h6 class="choose__mini-title">Тип покрытия экрана</h6>
+                                    <img class="choose__arrow" src="img/theme/icons/arrow.svg" alt="" role="presentation" />
+                                    <ul class="choose__amounts">
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="gl" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">Глянцевое</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="matt" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">Матовое</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="choose">
+                                    <h6 class="choose__mini-title">Тип матрицы</h6>
+                                    <img class="choose__arrow" src="img/theme/icons/arrow.svg" alt="" role="presentation" />
+                                    <ul class="choose__amounts">
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="TFT *VA" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">TFT *VA</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="TFT IPS" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">TFT IPS</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="TFT PLS" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">TFT PLS</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="TFT TN" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">TFT TN</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <button class="selection__button button button-blue" type="button" value="">ВСЕ ПАРАМЕТРЫ +</button>
+                                <section class="choose hide">
+                                    <h6 class="choose__mini-title">Количество ядер процессора</h6>
+                                    <img class="choose__arrow" src="img/theme/icons/arrow.svg" alt="" role="presentation" />
+                                    <ul class="choose__amounts">
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="2" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">2</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="4" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">4</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="5" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">5</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="8" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">8</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="choose hide">
+                                    <h6 class="choose__mini-title">Видеоадаптер</h6>
+                                    <img class="choose__arrow" src="img/theme/icons/arrow.svg" alt="" role="presentation" />
+                                    <ul class="choose__amounts">
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="AMD" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">AMD</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="Nvidia" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">NVIDIA</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="ATI" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">ATI</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="choose__row">
+                                            <label class="choose__label label-checkbox">
+                                                <input class="choose__input label-checkbox__input-hidden" type="checkbox" name="intel" />
+                                                <span class="choose__check label-checkbox__label-span"></span>
+                                                <span class="choose__brand">INTEL</span>
+                                                <span class="choose__amount-block">
+                                                    <span class="choose__left-bracker">(</span>
+                                                    <span class="choose__amount">ищем…</span>
+                                                    <span class="choose__right-bracker">)</span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-xl-9">
+                        <div class="sortable">
+                            <div class="sortable__left-side">
+                                <span class="sortable__sortBy">Сортировать по:</span>
+                                <a class="sortable__link active" href="#" title="популярности">популярности</a>
+                                <a class="sortable__link" href="#" title="цене">цене</a>
+                                <a class="sortable__link" href="#" title="новизне">новизне</a>
+                            </div>
+                            <div class="sortable__right-side">
+                                <a class="sortable__cards no-active" href="/category.html" title="таблица">
+                                    <span class="sortable__lt"></span>
+                                    <span class="sortable__rt"></span>
+                                    <span class="sortable__ld"></span>
+                                    <span class="sortable__rd"></span>
+                                </a>
+                                <a class="sortable__tables active" href="#" title="список">
+                                    <span class="sortable__first"></span>
+                                    <span class="sortable__second"></span>
+                                    <span class="sortable__third"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="popular light-theme" id="popular">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="popular__card reverse-card">
+                                            <a class="popular__img-link" href="#" title="#">
+                                                <img class="popular__img" src="img/card/card1.png" alt="#" title="" />
+                                            </a>
+                                            <div class="popular__reverse-block">
+                                                <a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой</a>
+                                                <div class="rating">
+                                                    <div class="rating__stars-block">
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" />
+                                                    </div>
+                                                    <div class="rating__feed-block">
+                                                        <span class="rating__feed-count">5</span>
+                                                        <span class="rating__feed-title">отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular__reverse-right-block">
+                                                <div class="popular__price-shop">
+                                                    <span class="popular__from-word">от</span>
+                                                    <span class="popular__total-price shop">999</span>
+                                                </div>
+                                                <div class="popular__shops">
+                                                    <span class="popular__shop-in">в</span>
+                                                    <span class="popular__shop-count">47</span>
+                                                    <span class="popular__shop-title">магазинах</span>
+                                                </div>
+                                                <a class="popular__link-shop button button-yellow">Сравнить цены</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="popular__card reverse-card">
+                                            <a class="popular__img-link" href="#" title="#">
+                                                <img class="popular__img" src="img/card/card1.png" alt="#" title="" />
+                                            </a>
+                                            <div class="popular__reverse-block">
+                                                <a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой</a>
+                                                <div class="rating">
+                                                    <div class="rating__stars-block">
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" />
+                                                    </div>
+                                                    <div class="rating__feed-block">
+                                                        <span class="rating__feed-count">5</span>
+                                                        <span class="rating__feed-title">отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular__reverse-right-block">
+                                                <div class="popular__price-shop">
+                                                    <span class="popular__from-word">от</span>
+                                                    <span class="popular__total-price shop">999 999</span>
+                                                </div>
+                                                <div class="popular__shops">
+                                                    <span class="popular__shop-in">в</span>
+                                                    <span class="popular__shop-count">47</span>
+                                                    <span class="popular__shop-title">магазинах</span>
+                                                </div>
+                                                <a class="popular__link-shop button button-yellow">Сравнить цены</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="popular__card reverse-card">
+                                            <a class="popular__img-link" href="#" title="#">
+                                                <img class="popular__img" src="img/card/card1.png" alt="#" title="" />
+                                            </a>
+                                            <div class="popular__reverse-block">
+                                                <a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой Товар с хорошими качествами и ценой</a>
+                                                <div class="rating">
+                                                    <div class="rating__stars-block">
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" />
+                                                    </div>
+                                                    <div class="rating__feed-block">
+                                                        <span class="rating__feed-count">55</span>
+                                                        <span class="rating__feed-title">отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular__reverse-right-block">
+                                                <div class="popular__price-shop discount">
+                                                    <span class="popular__from-word">от</span>
+                                                    <span class="popular__total-price shop discount">10 000</span>
+                                                    <span class="popular__old-price">
+                                                        <span class="strike">99 999</span>
+                                                    </span>
+                                                </div>
+                                                <div class="popular__shops">
+                                                    <span class="popular__shop-in">в</span>
+                                                    <span class="popular__shop-count">47</span>
+                                                    <span class="popular__shop-title">магазинах</span>
+                                                </div>
+                                                <a class="popular__link-shop button button-yellow">Сравнить цены</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="popular__card reverse-card">
+                                            <a class="popular__img-link" href="#" title="#">
+                                                <img class="popular__img" src="img/card/card1.png" alt="#" title="" />
+                                            </a>
+                                            <div class="popular__reverse-block">
+                                                <a class="popular__img-link-desc" href="#" title="#">Товар с хорошими качествами и ценой Товар с хорошими качествами и ценой Товар с хорошими качествами и ценой Товар с хорошими качествами и ценой Товар с хорошими качествами и ценой Товар с хорошими качествами
+                                                    и ценой</a>
+                                                <div class="rating">
+                                                    <div class="rating__stars-block">
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" />
+                                                    </div>
+                                                    <div class="rating__feed-block">
+                                                        <span class="rating__feed-count">55</span>
+                                                        <span class="rating__feed-title">отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular__reverse-right-block">
+                                                <div class="popular__price-shop discount">
+                                                    <span class="popular__from-word">от</span>
+                                                    <span class="popular__total-price shop discount">9</span>
+                                                    <span class="popular__old-price">
+                                                        <span class="strike">10</span>
+                                                    </span>
+                                                </div>
+                                                <div class="popular__shops">
+                                                    <span class="popular__shop-in">в</span>
+                                                    <span class="popular__shop-count">47</span>
+                                                    <span class="popular__shop-title">магазинах</span>
+                                                </div>
+                                                <a class="popular__link-shop button button-yellow">Сравнить цены</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="popular__card reverse-card">
+                                            <a class="popular__img-link" href="#" title="#">
+                                                <img class="popular__img" src="img/card/card1.png" alt="#" title="" />
+                                            </a>
+                                            <div class="popular__reverse-block">
+                                                <a class="popular__img-link-desc" href="#" title="#">Товар</a>
+                                                <div class="rating">
+                                                    <div class="rating__stars-block">
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" />
+                                                        <img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" />
+                                                    </div>
+                                                    <div class="rating__feed-block">
+                                                        <span class="rating__feed-count">551</span>
+                                                        <span class="rating__feed-title">отзывов</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular__reverse-right-block">
+                                                <div class="popular__price-shop discount">
+                                                    <span class="popular__from-word">от</span>
+                                                    <span class="popular__total-price shop discount">999 998</span>
+                                                    <span class="popular__old-price">
+                                                        <span class="strike">999 999</span>
+                                                    </span>
+                                                </div>
+                                                <div class="popular__shops">
+                                                    <span class="popular__shop-in">в</span>
+                                                    <span class="popular__shop-count">471</span>
+                                                    <span class="popular__shop-title">магазинах</span>
+                                                </div>
+                                                <a class="popular__link-shop button button-yellow">Сравнить цены</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <ul>
+                                <li class="pagination__arrow-left">
+                                    <a class="pagination__link" id="prev" href="#" title="назад">
+                                        <</a>
+                                </li>
+                                <li class="pagination__item active">
+                                    <a class="pagination__link" href="#" title="1">
+                                        <span>1</span>
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#" title="2">
+                                        <span>2</span>
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#" title="3">
+                                        <span>3</span>
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#" title="4">
+                                        <span>4</span>
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#" title="5">
+                                        <span>5</span>
+                                    </a>
+                                </li>
+                                <li class="pagination__arrow-right">
+                                    <a class="pagination__link" id="next" href="#" title="вперед">></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="subscribe" id="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="subscribe__subscribe-social-block">
+                            <h3 class="subscribe__title">Подпишись на все лучшие цены от
+                                <span class="subscribe__title-shop" id="shop-calc">5 230</span>
+                                <span class="subscribe__title-shop-other">интернет-магазинов:</span>
+                            </h3>
+                        </div>
+                        <form class="subscribe__form" action="#" name="subscribe" id="subscribeForm">
+                            <h3 class="subscribe__title-sucsess" id="subscrSuccsess">Вы успешно подписались</h3>
+                            <input class="subscribe__email input-default" required="required" type="email" name="emailaddress" id="email" placeholder="Введите свой e-mail" />
+                            <button class="subscribe__btn-subsc button button-yellow" id="sucsessBtn" type="submit" value="подписаться">подписаться</button>
+                        </form>
+                        <div class="social-entry">
+                            <h4 class="social-entry__title">Через соцсети:</h4>
+                            <ul class="social-entry__social-block">
+                                <li class="social-entry__item">
+                                    <a class="social-entry__link" href="#" title="#">
+                                        <img class="social-entry__img" src="img/theme/socials/twitter.png" alt="twitter" title="" />
+                                    </a>
+                                </li>
+                                <li class="social-entry__item">
+                                    <a class="social-entry__link">
+                                        <img class="social-entry__img" src="img/theme/socials/vk.png" alt="vk" title="" />
+                                    </a>
+                                </li>
+                                <li class="social-entry__item">
+                                    <a class="social-entry__link">
+                                        <img class="social-entry__img" src="img/theme/socials/youtube.png" alt="youtube" title="" />
+                                    </a>
+                                </li>
+                                <li class="social-entry__item">
+                                    <a class="social-entry__link">
+                                        <img class="social-entry__img" src="img/theme/socials/facebook500.png" alt="facebook" title="" />
+                                    </a>
+                                </li>
+                                <li class="social-entry__item">
+                                    <a class="social-entry__link">
+                                        <img class="social-entry__img" src="img/theme/socials/googleplus.png" alt="google-plus" title="" />
+                                    </a>
+                                </li>
+                                <li class="social-entry__item">
+                                    <a class="social-entry__link">
+                                        <img class="social-entry__img" src="img/theme/socials/instagram.png" alt="instagram" title="" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="shop-add">
+                            <div class="row">
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="shop-add__shop-card" href="#" title="#">
+                                        <img class="shop-add__img" src="img/theme/shop/brand.png" alt="#" title="" />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="shop-add__shop-card" href="#" title="#">
+                                        <img class="shop-add__img" src="img/theme/shop/brand2.png" alt="#" title="" />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="shop-add__shop-card" href="#" title="#">
+                                        <img class="shop-add__img" src="img/theme/shop/brand3.png" alt="#" title="" />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="shop-add__shop-card" href="#" title="#">
+                                        <img class="shop-add__img" src="img/theme/shop/brand4.png" alt="#" title="" />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="shop-add__shop-card" href="#" title="#">
+                                        <img class="shop-add__img" src="img/theme/shop/brand5.png" alt="#" title="" />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="shop-add__shop-card" href="#" title="#">
+                                        <img class="shop-add__img" src="img/theme/shop/brand6.png" alt="#" title="" />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="shop-add__shop-card" href="#" title="#">
+                                        <img class="shop-add__img" src="img/theme/shop/brand7.png" alt="#" title="" />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="shop-add__shop-card" href="#" title="#">
+                                        <img class="shop-add__img" src="img/theme/shop/brand8.png" alt="#" title="" />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="shop-add__shop-card shop-add__shop-card-no-border" href="#addShop" title="#">
+                                        <span class="shop-add__add">+</span>
+                                        <span class="shop-add__add-shop-link">Подключить магазин</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <div class="container">
+                <div class="row">
+                    <h3 class="service__title">Сервис поиска товаров и цен</h3>
+                    <p class="service__desc-title">Сервис SravniPrice.ru ищет лучшие цены на все, что продается в Москве. Здесь можно сравнить цены на 23 млн товаров и среди 6 тысяч магазинов выбрать именно тот, который предлагает самую низкую стоимость. SravniPrice.ru ежедневно собирает
+                        100 000 скидок и 5000 промокодов со всех интернет-магазинов, чтобы купить выгодно.</p>
+                    <p class="service__desc">Мы не продаём товары и не организовываем их доставку, мы работаем для того, чтобы покупатель мог быстро и удобно найти самое выгодное предложение. Для тех, кто определяется с выбором, в каждом разделе есть подбор по параметрам и возможность
+                        сравнить товары между собой. Доступен и удобный текстовый поиск, позволяющий искать как нужные разделы, так и конкретные товары по названию. А на странице каждой модели есть подробная информация, которая поможет принять решение:
+                        описание, технические характеристики, фото и видео, полезные ссылки и отзывы. Там же находится блок «Где купить?» со списком интернет-магазинов, ценами и прямыми ссылками на страницу покупкию</p>
+                    <p class="service__desc">К системе SravniPrice.ru подключено более 1000 магазинов, данные по которым постоянно обновляются. Благодаря этому вы сможете не только выбрать подходящий товар, но и купить его по самым выгодным условиям!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#" title="#">Бытовая техника</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <p class="sub-footer__all-rights">© 2019 SravniPrice.ru All rights reserved.</p>
+                <a class="sub-footer__add-shop" href="#addShop" title="#">
+                    <span class="sub-footer__plus">+</span>
+                    <span class="sub-footer__desc-add-shop">Подключить магазин</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <form class="add-shop popup white-popup-block mfp-hide" id="addShop" autocomplete="off">
+        <div class="add-shop__header">
+            <h2 class="add-shop__title">Оставить заявку онлайн</h2>
+            <div class="add-shop__close-btn">
+                <img class="add-shop__close" src="img/theme/icons/closeModal.svg" alt="закрыть" title="" />
+            </div>
+        </div>
+        <div class="add-shop__body">
+            <input class="add-shop__input-default input-default" id="fio" type="text" name="fio" placeholder="ФИО" required="required" />
+            <input class="add-shop__input-default input-default" id="phone" type="tel" name="tel" placeholder="Телефон" required="required" />
+            <input class="add-shop__input-default input-default" id="eMail" type="email" name="eMail" placeholder="E - mail" required="required" />
+            <textarea class="add-shop__textarea-default input-default" id="message" rows="7" name="message" placeholder="Сообщение" required="required"></textarea>
+            <div class="add-shop__send-block">
+                <div class="add-shop__confirm-block">
+                    <label class="label-checkbox">
+                        <input class="label-checkbox__input-hidden" required="required" type="checkbox" id="confirmData" name="confirmData" />
+                        <span class="label-checkbox__label-span"></span>
+                    </label>
+                    <p>Я соглашаюсь на обработку персональных данных</p>
+                </div>
+                <button class="add-shop__button button button-yellow" type="submit" value="отправить">отправить</button>
+            </div>
+        </div>
+    </form>
+    <form class="add-shop popup white-popup-block mfp-hide" id="chooseRegion" autocomplete="off">
+        <div class="add-shop__header">
+            <h2 class="add-shop__title">Выбор города</h2>
+            <div class="add-shop__close-btn">
+                <img class="add-shop__close" src="img/theme/icons/closeModal.svg" alt="закрыть" title="" />
+            </div>
+        </div>
+        <div class="add-shop__body">
+            <div class="add-shop__row">
+                <p class="add-shop__country">Страна:</p>
+                <p class="add-shop__country-choose">Россия</p>
+            </div>
+            <div class="add-shop__row">
+                <p class="add-shop__country">Уточнить регион:</p>
+                <select class="add-shop__select-country" id="countrySelect" name="country" data-placeholder=""></select>
+            </div>
+            <div class="add-shop__row">
+                <p class="add-shop__country">Выбрать город:</p>
+            </div>
+            <div class="add-shop__regions-block input-default"></div>
+        </div>
+    </form>
+    <form class="add-shop popup white-popup-block mfp-hide" id="thanks" autocomplete="off">
+        <div class="add-shop__header">
+            <h2 class="add-shop__title">Спасибо!</h2>
+            <div class="add-shop__close-btn">
+                <img class="add-shop__close" src="img/theme/icons/closeModal.svg" alt="закрыть" title="" />
+            </div>
+        </div>
+        <div class="add-shop__body">
+            <p class="add-shop__thanks-text">Ваша заявка принята. <br> Наш специалист рассмотрит ваше обращение и обязательно свяжется с вами в ближайшее время.</p>
+        </div>
+    </form>
+</body>
+
+</html>

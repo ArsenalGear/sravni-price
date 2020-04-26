@@ -1,0 +1,44 @@
+{
+  "name": "Project",
+  "version": "1.0.0",
+  "description": "Gulp",
+  "author": "Fly Code",
+  "license": "ISC",
+  "devDependencies": {
+    "bemto.pug": "^2.1.0",
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-typograf": "^3.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "jquery": "^3.3.1",
+    "jquery-ui": "^1.12.1",
+    "jquery.maskedinput": "^1.4.1",
+    "jquery.scrollbar": "^0.2.11",
+    "magnific-popup": "^1.1.0",
+    "select2": "^4.0.6-rc.1",
+    "slick-carousel": "^1.8.1",
+    "tether": "^1.4.3",
+    "timepicker": "^1.11.12"
+  },
+  "dependencies": {
+    "gulp-connect-php": "^1.0.3",
+    "jq-keyboard": "^1.0.1",
+    "js-cookie": "^2.2.0"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

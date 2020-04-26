@@ -1,0 +1,555 @@
+extends layouts/site
+
+block content
+    +b('div').breadcrumbs
+        .container
+            .row
+                .col-12
+                    +e('div').wrapper
+                        +e('a').link Главная
+                        +e('span').divider /
+                        +e('a').link Компьютеры
+                        +e('span').divider /
+                        +e('span').link.breadcrumbs__link-last Ноутбуки
+    +b('section').title-goods
+        .container
+            .row
+                .col-12
+                    +e('h1').title Ноутбуки
+
+    +b('div').goods-desc
+        .container
+            .row
+                .col-12
+                    +e('ul').ankchor
+                        +e('li')
+                            +e('a').link.anchor-link(href="#charac" title="Характеристики") Характеристики
+                        +e('li')
+                            +e('a').link.anchor-link(href="#price" title="Цены") Цены
+                        +e('li')
+                            +e('a').link.anchor-link(href="#desc" title="Описание") Описание
+                        +e('li')
+                            +e('a').link.anchor-link(href="#video" title="Видео") Видео
+                        +e('li')
+                            +e('a').link.anchor-link(href="#feed" title="Отзывы") Отзывы
+                        +e('li')
+                            +e('a').link.anchor-link(href="#similar" title="Похожие товары") Похожие товары
+            .row
+                .col-12.col-lg-6
+                    +b('div').good-slider
+                        +e('div').slider#goodSlider
+                            +e('div').wrapper
+                                <img src="https://smartideal.net/wp-content/uploads/2018/08/guitar4.jpg" alt="#">
+                .col-12.col-lg-6
+                    +b('div').buy
+                        +e('div').rating-block
+                            +e('p').middle-price-desc Средняя цена
+                            +b('div').rating
+                                +e('div').stars-block
+                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                    +e('img').star(src="img/theme/icons/star_checked.png")
+                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                    +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                +e('div').feed-block
+                                    +e('span').feed-count 5
+                                    +e('span').feed-title отзывов
+                        +e('div').midle-price-block
+                            +e('span').red-price#red-price 28 280
+                            +e('span').from от
+                            +e('a').link-shop(href="#" title="магазин") Ozon.ru
+                        +e('div').price-range-block
+                            +e('div').price-range-wrapper
+                                +e('span').from-word от
+                                +e('span').from-range 23 990
+                                +e('span').from-line -
+                                +e('span').to-range 24 990
+                            +e('div').shop-count
+                                +e('span').in-word в
+                                +e('span').inshop-count 23
+                                +e('span').in-word-shop магазинах
+                        +e('div').btn-block
+                            +e('a').buy-btn.button.button-yellow(href="#" title="#") Купить
+                            +e('a').match-btn.button.button-blue.anchor-link(href="#price" title="#") Сравнить
+                        +e('div').charac-block
+                            +e('div').charac-row
+                                +e('span').charac-key производитель производитель:
+                                +e('span').charac-value Dell
+                            +e('div').charac-row
+                                +e('span').charac-key модель:
+                                +e('span').charac-value Dell
+                            +e('div').charac-row
+                                +e('span').charac-key диагональ:
+                                +e('span').charac-value Dell
+                            +e('div').charac-row
+                                +e('span').charac-key веc:
+                                +e('span').charac-value Dell
+
+            +b('section').characteristic#charac
+                +e('div').title-block
+                    +e('h3').title Характеристики Dell 5570
+                    +e('div').invisible-rotate-block
+                +e('div').table-wrapper
+                  +e('table').table#charac-table
+                      +e('tr')
+                          +e('td').key Макс. объем оперативной памяти:
+                          +e('td').value Intel Core i3 / i3-6100U / 256 Гб / DVD
+                      +e('tr')
+                          +e('td').key Макс. объем оперативной памяти:
+                          +e('td').value Intel Core i3 / i3-6100U / 256 Гб / DVD
+
+                      +e('tr')
+                          +e('td').key Макс. объем оперативной памяти:
+                          +e('td').value Intel Core i3 / i3-6100U / 256 Гб / DVD
+
+                      +e('tr')
+                          +e('td').key Макс. объем оперативной памяти:
+                          +e('td').value Intel Core i3 / i3-6100U / 256 Гб / DVD
+
+                      +e('tr')
+                          +e('td').key Макс. объем оперативной памяти:
+                          +e('td').value Intel Core i3 / i3-6100U / 256 Гб / DVD
+
+                      +e('tr')
+                          +e('td').key Макс. объем оперативной памяти:
+                          +e('td').value Intel Core i3 / i3-6100U / 256 Гб / DVD
+
+                      +e('tr')
+                          +e('td').key Макс. объем оперативной памяти:
+                          +e('td').value Intel Core i3 / i3-6100U / 256 Гб / DVD
+
+                      +e('tr')
+                          +e('td').key Макс. объем оперативной памяти:
+                          +e('td').value Intel Core i3 / i3-6100U / 256 Гб / DVD
+
+                      +e('tr')
+                          +e('td').key Макс. объем оперативной памяти:
+                          +e('td').value Intel Core i3 / i3-6100U / 256 Гб / DVD
+
+                      +e('tr')
+                          +e('td').key Макс. объем оперативной памяти:
+                          +e('td').value Intel Core i3 / i3-6100U / 256 Гб / DVD
+
+
+
+
+            +b('section').describe#desc
+                +e('div').title-block
+                    +e('h3').title Описание
+                    +e('div').invisible-rotate-block
+                +e('div').desc-block
+                    +e('p') Относительно недорогой полноформатный ноутбук среднего класса с хорошим уровнем производительности и отличной автономностью. Пригоден для решения широкого круга задач, в том числе для использования его в качестве замены домашнему персональному компьютеру. Эта модель создана на базе мобильной аппаратной платформы от Intеl и оснащена процессором семейства Core i3/i5. Объем оперативной памяти в старших модификациях составляет 8 Гб, чего достаточно для работы браузеров или офисных приложений. Но, при необходимости он может быть легко расширен до 20 Гб. За вывод изображения и базовый уровень 3D производительности ноутбука Acer Extensa 2540 отвечает встроенное в процессор видеоядро.
+                    +e('p') Относительно недорогой полноформатный ноутбук среднего класса с хорошим уровнем производительности и отличной автономностью. Пригоден для решения широкого круга задач, в том числе для использования его в качестве замены домашнему персональному компьютеру. Эта модель создана на базе мобильной аппаратной платформы от Intеl и оснащена процессором семейства Core i3/i5. Объем оперативной памяти в старших модификациях составляет 8 Гб, чего достаточно для работы браузеров или офисных приложений. Но, при необходимости он может быть легко расширен до 20 Гб. За вывод изображения и базовый уровень 3D производительности ноутбука Acer Extensa 2540 отвечает встроенное в процессор видеоядро.
+
+            +b('section').video#video
+                +e('div').title-block
+                    +e('h3').title Видеообзор
+                    +e('div').invisible-rotate-block
+                +e('div').video-block
+                    <iframe src="https://www.youtube.com/embed/mKt-MDwtVB4" allowfullscreen></iframe>
+
+            +b('section').price-block#price
+                +e('div').title-block
+                    +e('h3').title Цены на Dell Inspiron 5570 в г.Москва
+                    +e('div').invisible-rotate-block
+                .row
+                    .col-12.col-md-6
+                        +b('div').brand-block
+                            +e('div').shop-block
+                                +e('img').img(src="img/theme/shop/brand5.png" alt="#" title="#")
+                            +e('div').desc-block
+                                +e('a').model(href="#" title="#") Dell Inspiron 5570, White (5570-5342)
+                                +e('div').charac-block
+                                    +e('span').single-charac intel i5
+                                    +e('span').slash /
+                                    +e('span').single-charac 8 Гб
+                                    +e('span').slash /
+                                    +e('span').single-charac Windows 10
+                    .col-12.col-md-6
+                        +b('div').silo
+                            +e('div').silo-block
+                                +e('div').silo-title Есть на складе
+                                +e('div').silo-town по Москве
+                            +e('div').price-wrap
+                                +e('p').cost 23 990
+                                +e('a').link.button.button-yellow(href="#" title="#") в Магазин
+                .row
+                    .col-12.col-md-6
+                        +b('div').brand-block
+                            +e('div').shop-block
+                                +e('img').img(src="img/theme/shop/brand5.png" alt="#" title="#")
+                            +e('div').desc-block
+                                +e('a').model(href="#" title="#") Dell Inspiron 5570, White (5570-5342)
+                                +e('div').charac-block
+                                    +e('span').single-charac intel i5
+                                    +e('span').slash /
+                                    +e('span').single-charac 8 Гб
+                                    +e('span').slash /
+                                    +e('span').single-charac Windows 10
+                    .col-12.col-md-6
+                        +b('div').silo
+                            +e('div').silo-block
+                                +e('div').silo-title Есть на складе
+                                +e('div').silo-town по Москве
+                            +e('div').price-wrap
+                                +e('p').cost 23 990
+                                +e('a').link.button.button-yellow(href="#" title="#") в Магазин
+                .row
+                    .col-12.col-md-6
+                        +b('div').brand-block
+                            +e('div').shop-block
+                                +e('img').img(src="img/theme/shop/brand5.png" alt="#" title="#")
+                            +e('div').desc-block
+                                +e('a').model(href="#" title="#") Dell Inspiron 5570, White (5570-5342)
+                                +e('div').charac-block
+                                    +e('span').single-charac intel i5
+                                    +e('span').slash /
+                                    +e('span').single-charac 8 Гб
+                                    +e('span').slash /
+                                    +e('span').single-charac Windows 10
+                    .col-12.col-md-6
+                        +b('div').silo
+                            +e('div').silo-block
+                                +e('div').silo-title Есть на складе
+                                +e('div').silo-town по Москве
+                            +e('div').price-wrap
+                                +e('p').cost 23 990
+                                +e('a').link.button.button-yellow(href="#" title="#") в Магазин
+                .row
+                    .col-12.col-md-6
+                        +b('div').brand-block
+                            +e('div').shop-block
+                                +e('img').img(src="img/theme/shop/brand5.png" alt="#" title="#")
+                            +e('div').desc-block
+                                +e('a').model(href="#" title="#") Dell Inspiron 5570, White (5570-5342)
+                                +e('div').charac-block
+                                    +e('span').single-charac intel i5
+                                    +e('span').slash /
+                                    +e('span').single-charac 8 Гб
+                                    +e('span').slash /
+                                    +e('span').single-charac Windows 10
+                    .col-12.col-md-6
+                        +b('div').silo
+                            +e('div').silo-block
+                                +e('div').silo-title Есть на складе
+                                +e('div').silo-town по Москве
+                            +e('div').price-wrap
+                                +e('p').cost 23 990
+                                +e('a').link.button.button-yellow(href="#" title="#") в Магазин
+                +e('button').button.button.button-blue.show-more(type="button" value="все предложения") все предложения
+                +e('div').shop-count
+                    +e('span').in в
+                    +e('span').count 47
+                    +e('span').shop-word магазинах
+
+            +b('section').feed#feed
+                +e('div').title-block
+                    +e('h3').title Отзывы о ноутбук Dell Inspiron 5570
+                    +e('div').invisible-rotate-block
+
+                +e('div').add-feed-block
+                    +e('div').feed-count
+                        +e('span').count 25
+                        +e('span').word отзывов
+                    +e('div').add-feed
+                        +e('a').add-word.anchor-link(href="#addFeed" title="#") + Добавить отзыв
+
+                +e('div').wrapper
+
+                    +b('div').feed-card
+                        .row
+                            .col-12.col-md-4
+                                +e('div').name-n-date
+                                    +e('p').name Антон
+                                    +e('span').divide |
+                                    +e('p').time <time> 15-04-2018 </time>
+                                +e('div').mark-block
+                                    +e('p').mark-word Оценка
+                                    +e('div').mark-wrap
+                                        +e('span').mark 4
+                                        +b('div').rating
+                                            +e('div').stars-block
+                                                +e('img').star(src="img/theme/icons/star_checked.png")
+                                                +e('img').star(src="img/theme/icons/star_checked.png")
+                                                +e('img').star(src="img/theme/icons/star_checked.png")
+                                                +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                            +e('p').choice-title Хороший выбор
+
+                            .col-12.col-md-8
+                                +e('p').recommend-accept Реккомендую покупку
+                                +e('p').reccomend-desc Хороший помощник в работе этот ноутбук, легкий, тонкий, с прочным корпусом, характерным для Lenovo IdeaPad. Диагональ средняя, для комфортной работы вполне достаточно и батарея так медленнее садится. Есть веб-камера, качество приятное, неплохой обзор и четкость выдается нормальная. Тихая клавиатура, просто шелестит, когда быстрый набор веду. Что касательно скорости работы, то тут вообще всё идеально - любая программа загружается моментально.
+
+                            +e('div').bottom-block
+                              .col-12.col-xl-4.order-xl-1.order-lg-2.order-md-2.order-sm-2.order-2
+                                  +e('div').useful-block Полезен ли отзыв?
+                                      +e('p').useful-title
+                                      +e('div').useful-btn-block
+                                          +e('label').useful-btn.button.active
+                                              +e('input').usefull-input.usefull-btn(type="radio" checked name="feed1")
+                                              +e('span').useful-span Да
+                                          +e('label').useful-btn.button
+                                              +e('input').usefull-input.not-usefull-btn(type="radio" name="feed2")
+                                              +e('span').useful-span Нет
+                              .col-12.col-xl-8.d-flex.flex-wrap.align-items-center.order-xl-2.order-lg-1.order-md-1.order-sm-1.order-1
+                                  +e('div').liked-row
+                                      +e('span').liked-status Понравилось
+                                      +e('p').liked-desc Хороший дизайн и производительность
+                                  +e('div').liked-row
+                                      +e('span').disliked-status Не понравилось
+                                      +e('p').liked-desc Много брака, в частности треск вентиляторов
+                                  +e('div').liked-row
+                                      +e('span').exp-status Опыт использования
+                                      +e('p').liked-desc Несколько месяцев
+                    +b('div').feed-card
+                        .row
+                            .col-12.col-md-4
+                                +e('div').name-n-date
+                                    +e('p').name Антон
+                                    +e('span').divide |
+                                    +e('p').time <time> 15-04-2018 </time>
+                                +e('div').mark-block
+                                    +e('p').mark-word Оценка
+                                    +e('div').mark-wrap
+                                        +e('span').mark 4
+                                        +b('div').rating
+                                            +e('div').stars-block
+                                                +e('img').star(src="img/theme/icons/star_checked.png")
+                                                +e('img').star(src="img/theme/icons/star_checked.png")
+                                                +e('img').star(src="img/theme/icons/star_checked.png")
+                                                +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                                +e('img').star(src="img/theme/icons/star_unchecked.png")
+                                            +e('p').choice-title Хороший выбор
+
+                            .col-12.col-md-8
+                                +e('p').recommend-reject Не реккомендую покупку
+                                +e('p').reccomend-desc Хороший помощник в работе этот ноутбук, легкий, тонкий, с прочным корпусом, характерным для Lenovo IdeaPad. Диагональ средняя, для комфортной работы вполне достаточно и батарея так медленнее садится. Есть веб-камера, качество приятное, неплохой обзор и четкость выдается нормальная. Тихая клавиатура, просто шелестит, когда быстрый набор веду. Что касательно скорости работы, то тут вообще всё идеально - любая программа загружается моментально.
+
+                            +e('div').bottom-block
+                              .col-12.col-xl-4.order-xl-1.order-lg-2.order-md-2.order-sm-2.order-2
+                                  +e('div').useful-block Полезен ли отзыв?
+                                      +e('p').useful-title
+                                      +e('div').useful-btn-block
+                                          +e('label').useful-btn.button.active
+                                              +e('input').usefull-input.usefull-btn(type="radio" checked name="feed1")
+                                              +e('span').useful-span Да
+                                          +e('label').useful-btn.button
+                                              +e('input').usefull-input.not-usefull-btn(type="radio" name="feed2")
+                                              +e('span').useful-span Нет
+                              .col-12.col-xl-8.d-flex.flex-wrap.align-items-center.order-xl-2.order-lg-1.order-md-1.order-sm-1.order-1
+                                  +e('div').liked-row
+                                      +e('span').liked-status Понравилось
+                                      +e('p').liked-desc Хороший дизайн и производительность
+                                  +e('div').liked-row
+                                      +e('span').disliked-status Не понравилось
+                                      +e('p').liked-desc Много брака, в частности треск вентиляторов
+                                  +e('div').liked-row
+                                      +e('span').exp-status Опыт использования
+                                      +e('p').liked-desc Несколько месяцев
+
+
+
+
+            +b('div').pagination
+                +e('ul')
+                    +e('li').arrow-left
+                        +e('a').link#prev(href="#" title="назад") <
+                    +e('li').item.active
+                        +e('a').link(href="#" title="1")
+                            +e('span') 1
+                    +e('li').item
+                        +e('a').link(href="#" title="2")
+                            +e('span') 2
+                    +e('li').item
+                        +e('a').link(href="#" title="3")
+                            +e('span') 3
+                    +e('li').item
+                        +e('a').link(href="#" title="4")
+                            +e('span') 4
+                    +e('li').item
+                        +e('a').link(href="#" title="5")
+                            +e('span') 5
+                    +e('li').arrow-right
+                        +e('a').link#next(href="#" title="вперед") >
+
+            +b('section').add-feed
+                .row.justify-content-center
+                    .col-12.col-xl-8
+                        +e('form')#addFeed
+                            +e('div').add-feed-block
+                                +e('h2').title Добавить отзыв
+                                +e('div').row
+                                    +e('span').form-title Ваше имя:
+                                    +e('input').input(type="text" placeholder="Ваше имя")
+
+                                +e('div').row
+                                    +e('span').form-title.star Понравилось:
+                                    +e('textarea').textarea(rows="5" required  placeholder="Плюсы товара")
+
+                                +e('div').row
+                                    +e('span').form-title.star  Не понравилось:
+                                    +e('textarea').textarea(rows="5" required  placeholder="Недостаатки товара")
+
+                                +e('div').row
+                                    +e('span').form-title Комментарий:
+                                    +e('textarea').textarea(rows="5"  placeholder="Ваш комментарий")
+
+                                +e('div').row
+                                    +e('span').form-title Опыт использования:
+                                    +e('input').input(type="text" placeholder="Введите срок")
+                            +e('div').rate-block
+                                .row
+                                    .col-12.col-md-6
+                                        +e('div').rating-block
+                                            +e('div').main-rate
+                                                +e('span').rate-this Оценить
+                                                +e('div').rate-container
+                                                    <div class="rating-container">
+                                                        +e('img').star.one-star.rating-star.rating-chosen(src="img/theme/icons/star_checked.png")
+                                                        +e('img').star.two-star.rating-star(src="img/theme/icons/star_checked.png")
+                                                        +e('img').star.three-star.rating-star(src="img/theme/icons/star_checked.png")
+                                                        +e('img').star.four-star.rating-star(src="img/theme/icons/star_checked.png")
+                                                        +e('img').star.five-star.rating-star(src="img/theme/icons/star_checked.png")
+                                                    </div>
+                                                    <div class="new-modal__meaning-block consult-feed__meaning-block">
+                                                        <div class="new-modal__meaning meaning" style="display: none;"></div>
+                                                    </div>
+                                                +e('div').mark-block
+                                                    +e('span').mark#mark 5
+                                            +e('p').rate-this Рекомендуете ли вы этот товар другим покупателям?
+                                            +e('div').rate-this-block
+                                                +e('label').rate-label
+                                                    +e('input')#rateYes(name="rateYes" type="radio" checked)
+                                                    +e('span').span-outside
+                                                        +e('span').span-inside
+                                                    +e('span').useful-span Да
+                                                +e('label').rate-label
+                                                    +e('input')#rateNo(name="rateYes" type="radio")
+                                                    +e('span').span-outside
+                                                        +e('span').span-inside
+                                                    +e('span').useful-span Нет
+                                    .col-12.col-md-6
+                                        +e('div').send-block
+                                          +e('button').btn.button.button-blue(type="submit" value="Отправить") Отправить
+
+            +b('section').similar-goods#similar
+                +e('div').title-block
+                    +e('h3').title Похожие товары
+                    +e('div').invisible-rotate-block
+                +b('div').popular
+                    .row#popular-slider
+                            +e('div').card
+                                //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                                +e('a').img-link(href="#" title="#")
+                                    +e('img').img(src="img/card/card1.png" alt="#")
+                                +e('a').img-link-desc(href="#" title="#") Товар
+                                +e('a').price.button.button-yellow(href="#" title="#") от
+                                    +e('span').total-price 54
+
+                            +e('div').card
+                                //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                                +e('a').img-link(href="#" title="#")
+                                    +e('img').img(src="img/card/card1.png" alt="#")
+                                +e('a').img-link-desc(href="#" title="#") Товар
+                                +e('a').price.button.button-yellow(href="#" title="#") от
+                                    +e('span').total-price 54
+
+                            +e('div').card
+                                //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                                +e('a').img-link(href="#" title="#")
+                                    +e('img').img(src="img/card/card1.png" alt="#")
+                                +e('a').img-link-desc(href="#" title="#") Товар
+                                +e('a').price.button.button-yellow(href="#" title="#") от
+                                    +e('span').total-price 54
+
+                            +e('div').card
+                                //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                                +e('a').img-link(href="#" title="#")
+                                    +e('img').img(src="img/card/card1.png" alt="#")
+                                +e('a').img-link-desc(href="#" title="#") Товар
+                                +e('a').price.button.button-yellow(href="#" title="#") от
+                                    +e('span').total-price 54
+
+                            +e('div').card
+                                //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                                +e('a').img-link(href="#" title="#")
+                                    +e('img').img(src="img/card/card1.png" alt="#")
+                                +e('a').img-link-desc(href="#" title="#") Товар
+                                +e('a').price.button.button-yellow(href="#" title="#") от
+                                    +e('span').total-price 54
+
+                            +e('div').card
+                                //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                                +e('a').img-link(href="#" title="#")
+                                    +e('img').img(src="img/card/card1.png" alt="#")
+                                +e('a').img-link-desc(href="#" title="#") Товар
+                                +e('a').price.button.button-yellow(href="#" title="#") от
+                                    +e('span').total-price 54
+
+                            +e('div').card
+                                //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                                +e('a').img-link(href="#" title="#")
+                                    +e('img').img(src="img/card/card1.png" alt="#")
+                                +e('a').img-link-desc(href="#" title="#") Товар
+                                +e('a').price.button.button-yellow(href="#" title="#") от
+                                    +e('span').total-price 54
+
+
+
+    +b('section').subscribe#subscribe
+        .container
+            .row
+                .col-12.col-sm-12.col-md-12.col-lg-6
+                    +e('div').subscribe-social-block
+                        +e('h3').title Подпишись на все лучшие цены от <span class="subscribe__title-shop" id="shop-calc">5 230</span> <span class="subscribe__title-shop-other">интернет-магазинов:</span>
+
+                    +e('form').form(action="#" name="subscribe" id="subscribeForm")
+                        +e('h3').title-sucsess#subscrSuccsess Вы успешно подписались
+                        +e('input').email.input-default(required type="email" name="emailaddress" id="email" placeholder="Введите свой e-mail")
+                        +e('button').btn-subsc.button.button-yellow(id="sucsessBtn" type="submit" value="подписаться") подписаться
+
+                    +b('div').social-entry
+                        +e('h4').title Через соцсети:
+                        +e('ul').social-block
+                          <div data-mobile-view="true" data-share-size="40" data-like-text-enable="false" data-background-alpha="0.0" data-pid="1844693" data-mode="share" data-background-color="#ffffff" data-share-shape="round" data-share-counter-size="12" data-icon-color="#ffffff" data-mobile-sn-ids="fb.vk.tw.ok.wh.tm.vb." data-text-color="#000000" data-buttons-color="#FFFFFF" data-counter-background-color="#ffffff" data-share-counter-type="disable" data-orientation="horizontal" data-following-enable="false" data-sn-ids="fb.vk.tw.ok.wh.tm.vb." data-preview-mobile="false" data-selection-enable="true" data-exclude-show-more="false" data-share-style="1" data-counter-background-alpha="1.0" data-top-button="false" class="uptolike-buttons" ></div>
+
+                .col-12.col-sm-12.col-md-12.col-lg-6
+                    +b('div').shop-add
+                        .row
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand2.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand3.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand4.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand5.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand6.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand7.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand8.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card.shop-add__shop-card-no-border(href="#addShop" title="#")
+                                    +e('span').add +
+                                    +e('span').add-shop-link Подключить магазин
+
+    +b('section').service#service
+        .container
+            .row
+                +e('h3').title Сервис поиска товаров и цен
+                +e('p').desc-title Сервис SravniPrice.ru ищет лучшие цены на все, что продается в Москве. Здесь можно сравнить цены на 23 млн товаров и среди 6 тысяч магазинов выбрать именно тот, который предлагает самую низкую стоимость. SravniPrice.ru ежедневно собирает 100 000 скидок и 5000 промокодов со всех интернет-магазинов, чтобы купить выгодно.
+                +e('p').desc Мы не продаём товары и не организовываем их доставку, мы работаем для того, чтобы покупатель мог быстро и удобно найти самое выгодное предложение. Для тех, кто определяется с выбором, в каждом разделе есть подбор по параметрам и возможность сравнить товары между собой. Доступен и удобный текстовый поиск, позволяющий искать как нужные разделы, так и конкретные товары по названию. А на странице каждой модели есть подробная информация, которая поможет принять решение: описание, технические характеристики, фото и видео, полезные ссылки и отзывы. Там же находится блок «Где купить?» со списком интернет-магазинов, ценами и прямыми ссылками на страницу покупкию
+                +e('p').desc К системе SravniPrice.ru подключено более 1000 магазинов, данные по которым постоянно обновляются. Благодаря этому вы сможете не только выбрать подходящий товар, но и купить его по самым выгодным условиям!
+    <div id="toTop">Наверх</div>

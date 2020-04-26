@@ -1,0 +1,127 @@
+// Colors
+$white: white;
+$black: #222328;
+
+//
+$success-color: #8dc63f;
+$warning-color: #b8b900;
+$error-color: #ff3743;
+
+// Button-color
+$btn-light-yellow: #fff200;
+$btn-light-red: #f33733;
+
+// Backgrounds colors
+$bg-light-color: #f4f4f4;
+$bg-light-yellow: #fff200;
+$bg-light-blue: #333340;
+$bg-dark-blue: #06121c;
+$bg-main-color: $white;
+$bg-blue-color: #31bcfe;
+$bg-red-color: #f33733;
+
+// Borders colors
+$border-main-color: #31bcfe;
+$border-red-color: #f33733;
+$border-dark-color: #222222;
+$border-grey-color: #f0f0f0;
+$border-grey-filter: #f4f4f4;
+
+// Texts colors
+$text: #06121c;
+$text-main: #222222;
+$text-title: #303030;
+$text-btn: #303030;
+$text-placeholder-color: #757575;
+$text-white: #fff;
+$text-blue: #31bcfe;
+$text-red: #f33733;
+$text-grey: #bfbfbf;
+$text-footer: #6d6d6d;
+$text-footer-light: #bfbfbf;
+$text-green: #5d9d0a;;
+
+$link-color:  #31bcfe;
+$link-yellow:  #fff200;
+$link-main:  #222222;
+
+//width
+$wsp: 23.846%;
+$wbp: 49.145%;
+//height
+$hsp: 48.464%;
+$hbp: 100%;
+
+//width
+$ws: 279px;
+$wb: 575px;
+//height
+$hs: 284px;
+$hb: 100%;
+
+// Fonts
+//$icons-font-web: 'FontAwesome Web';
+
+$icons-font-regular: 'FontAwesome Solid';
+$icons-font-solid: 'FontAwesome Solid';
+$icons-font-brands: 'FontAwesome Brands';
+$font-main: GothamPro, sans-serif;
+
+@font-face {
+  font-family: 'GothamPro';
+  src: local('GothamPro'), url('../fonts/gotham-pro/GothamPro-Light.woff') format('woff'), url('../fonts/gotham-pro/GothamPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: local('GothamPro'), url('../fonts/gotham-pro/GothamPro-Medium.woff') format('woff'), url('../fonts/gotham-pro/GothamPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: local('GothamPro'), url('../fonts/gotham-pro/GothamPro-Bold.woff') format('woff'), url('../fonts/gotham-pro/GothamPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+//Icons font
+//@font-face {
+//  font-family: 'FontAwesome Web';
+//  src: url('../fonts/fontawesome/fontawesome-webfont.eot') format('embedded-opentype'), url('../fonts/fontawesome/fontawesome-webfont.woff2') format('woff2'), url('../fonts/fontawesome/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+@font-face {
+  font-family: 'FontAwesome Regular';
+  src: url('../fonts/fontawesome/fa-regular-400.eot') format('embedded-opentype'), url('../fonts/fontawesome/fa-regular-400.woff2') format('woff2'), url('../fonts/fontawesome/fa-regular-400.woff') format('woff'), url('../fonts/fontawesome/fa-regular-400.ttf') format('truetype'), url('../fonts/fontawesome/fa-regular-400.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome Solid';
+  src: url('../fonts/fontawesome/fa-solid-900.eot') format('embedded-opentype'), url('../fonts/fontawesome/fa-solid-900.woff2') format('woff2'), url('../fonts/fontawesome/fa-solid-900.woff') format('woff'), url('../fonts/fontawesome/fa-solid-900.ttf') format('truetype'), url('../fonts/fontawesome/fa-solid-900.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome Brands';
+  src: url('../fonts/fontawesome/fa-brands-400.eot') format('embedded-opentype'), url('../fonts/fontawesome/fa-brands-400.woff2') format('woff2'), url('../fonts/fontawesome/fa-brands-400.woff') format('woff'), url('../fonts/fontawesome/fa-brands-400.ttf') format('truetype'), url('../fonts/fontawesome/fa-brands-400.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// box-shadow
+$box-shadow-default: 0 0 .25rem 0 rgba($black,.12);
+
+// border-radius
+$border-radius-default: .188rem;
+$bor-rad-btn: 2rem;
+//$bor-rad-btn-mini: 	0.8125rem;
+$bor-rad-inpt: 2rem;
+
+// Animations by CSS 3
+$transition-default: all .33s;

@@ -1,0 +1,146 @@
+.button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: $bor-rad-btn;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: $transition-default;
+  font: 700 1rem/1.125rem $font-main;
+  letter-spacing: 0.5px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &-yellow {
+    background-color: $btn-light-yellow;
+    color: $text;
+    border: 2px solid $btn-light-yellow;
+
+    &:hover {
+      background-color: $white;
+      border: 2px solid $btn-light-yellow;
+      color: $text;
+
+    }
+  }
+
+  &-blue {
+    background-color: transparent;
+    color: $text-blue;
+    border: 2px solid $border-main-color;
+    padding: 0.63rem .8rem;
+    font: 700 0.75rem/1rem $font-main;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 5px 24px rgba(49, 188, 254, 0.6);
+      background-color: $text-blue;
+      border: 2px solid $border-main-color;
+      color: $white;
+    }
+  }
+
+  &-red {
+    background-color: $bg-red-color;
+    color: $text-white;
+    border: 2px solid $border-red-color;
+    padding: 0.8rem 2.25rem;
+    font: 700 0.75rem/1rem $font-main;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-main-color;
+      border: 2px solid $border-red-color;
+      color: $text-red;
+    }
+  }
+
+  &-dark {
+    background-color: transparent;
+    color: $text-main;
+    border: 2px solid $border-dark-color;
+    padding: 0.63rem .8rem;
+    font: 700 0.75rem/1rem $font-main;
+
+    &:hover,
+    &:focus {
+      background-color: $border-dark-color;
+      color: $text-white;
+    }
+  }
+}
+
+.menu-btn {
+  display: flex;
+  border: none;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  z-index: 3;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  & span, & span::before, & span::after{
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+  }
+
+  & span::before, & span::after {
+    content: '';
+    display: block;
+    transition: 0.2s;
+  }
+
+  & span::before {
+    transform: translateY(-5px);
+  }
+
+  &_active span {
+    height: 0;
+  }
+
+  & span::after {
+    transform: translateY(5px);
+  }
+
+  &_active span:before {
+    transform: rotate(-45deg);
+    transform-origin: center;
+  }
+
+  &_active span:after {
+    transform: rotate(45deg);
+    transform-origin: center;
+  }
+}
+
+#toTop {
+  width:100px;
+  border:1px solid #ccc;
+  background:#f7f7f7;
+  text-align:center;
+  padding:5px;
+  position:fixed;
+  bottom:10px; /* отступ кнопки от нижнего края страницы*/
+  right:10px;
+  cursor:pointer;
+  display:none;
+  color:#333;
+  font-size:12px;
+}
+
+

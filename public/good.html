@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>SravniPrice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SravniPrice"><!-- Twitter Card data-->
+    <meta name="twitter:title" content="SravniPrice">
+    <meta name="twitter:description" content="SravniPrice">
+    <meta name="twitter:image" content="/img/content/shares/twitter.jpg"><!-- Open Graph data-->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="SravniPrice">
+    <meta property="og:description" content="SravniPrice">
+    <meta property="og:image" content="/img/content/shares/facebook.jpg"><!-- Vkontakte data-->
+    <link rel="image_src" href="/img/content/shares/vkontakte.jpg"><!-- Favicons-->
+    <link rel="icon" href="/img/content/favicons/favicon.png" sizes="32x32"><!-- Stylesheets-->
+    <link href="css/libs-index.min.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="css/main.css" type="text/css" rel="stylesheet" media="screen"><!-- Scripts-->
+    <script src="js/libs-index.min.js"></script>
+    <script src="js/social.js"></script>
+    <!--script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js')-->
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header__wrapper"><a class="header__logo" href="/" title="На главную"><span class="header__sravni">Sravni</span><span class="header__price">Price</span></a><a class="header__menu-btn button-yellow" id="menuBtn" href="#" title="Товары"><span class="menu-btn"><span></span></span>
+                        <div>товары</div>
+                    </a><a class="header__sale" href="#" title="Скидки">Скидки</a>
+                    <form class="header__search input-default"><input id="search-input" placeholder="Поиск товара" type="text" /><button class="header__button-search" type="submit"></button></form><a class="header__select-block" href="#chooseRegion" title="Выбрать регион"><span class="header__select">Санкт — Петербург</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="drop-down">
+        <div class="container">
+            <ul id="drop-down">
+                <div class="modal__close-modal"></div>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/washing_machine.png" alt="" role="presentation" /></div><span class="drop-down__desc">Бытовая техника</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/sport_tourism.png" alt="" role="presentation" /></div><span class="drop-down__desc">Спорт и туризм</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/audio_video.png" alt="" role="presentation" /></div><span class="drop-down__desc">Аудио, видео, фото</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/mobile.png" alt="" role="presentation" /></div><span class="drop-down__desc">Мобильная связь</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/for_home.png" alt="" role="presentation" /></div><span class="drop-down__desc">Все для дома</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/computers.png" alt="" role="presentation" /></div><span class="drop-down__desc">Компьютеры</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/for_kids.png" alt="" role="presentation" /></div><span class="drop-down__desc">Товары для детей</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/construction_repair.png" alt="" role="presentation" /></div><span class="drop-down__desc">Строительство и ремонт</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/auto_moto.png" alt="" role="presentation" /></div><span class="drop-down__desc">Авто и мото</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/health_beauty.png" alt="" role="presentation" /></div><span class="drop-down__desc">Красота и здоровье</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/clothes_shoes.png" alt="" role="presentation" /></div><span class="drop-down__desc">Одежда и обувь</span>
+                    </a></li>
+                <li><a class="drop-down__link" href="#" title="#">
+                        <div class="drop-down__img-block"><img class="drop-down__img" src="img/header/drop/for_office.png" alt="" role="presentation" /></div><span class="drop-down__desc">Все для офиса</span>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumbs__wrapper"><a class="breadcrumbs__link">Главная</a><span class="breadcrumbs__divider">/</span><a class="breadcrumbs__link">Компьютеры</a><span class="breadcrumbs__divider">/</span><span class="breadcrumbs__link breadcrumbs__link-last">Ноутбуки</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="title-goods">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="title-goods__title">Ноутбуки</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="goods-desc">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="goods-desc__ankchor">
+                            <li><a class="goods-desc__link anchor-link" href="#charac" title="Характеристики">Характеристики</a></li>
+                            <li><a class="goods-desc__link anchor-link" href="#price" title="Цены">Цены</a></li>
+                            <li><a class="goods-desc__link anchor-link" href="#desc" title="Описание">Описание</a></li>
+                            <li><a class="goods-desc__link anchor-link" href="#video" title="Видео">Видео</a></li>
+                            <li><a class="goods-desc__link anchor-link" href="#feed" title="Отзывы">Отзывы</a></li>
+                            <li><a class="goods-desc__link anchor-link" href="#similar" title="Похожие товары">Похожие товары</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="good-slider">
+                            <div class="good-slider__slider" id="goodSlider">
+                                <div class="good-slider__wrapper"><img src="https://smartideal.net/wp-content/uploads/2018/08/guitar4.jpg" alt="#"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="buy">
+                            <div class="buy__rating-block">
+                                <p class="buy__middle-price-desc">Средняя цена</p>
+                                <div class="rating">
+                                    <div class="rating__stars-block"><img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" /></div>
+                                    <div class="rating__feed-block"><span class="rating__feed-count">5</span><span class="rating__feed-title">отзывов</span></div>
+                                </div>
+                            </div>
+                            <div class="buy__midle-price-block"><span class="buy__red-price" id="red-price">28 280</span><span class="buy__from">от</span><a class="buy__link-shop" href="#" title="магазин">Ozon.ru</a></div>
+                            <div class="buy__price-range-block">
+                                <div class="buy__price-range-wrapper"><span class="buy__from-word">от</span><span class="buy__from-range">23 990</span><span class="buy__from-line">-</span><span class="buy__to-range">24 990</span></div>
+                                <div class="buy__shop-count"><span class="buy__in-word">в</span><span class="buy__inshop-count">23</span><span class="buy__in-word-shop">магазинах</span></div>
+                            </div>
+                            <div class="buy__btn-block"><a class="buy__buy-btn button button-yellow" href="#" title="#">Купить</a><a class="buy__match-btn button button-blue anchor-link" href="#price" title="#">Сравнить</a></div>
+                            <div class="buy__charac-block">
+                                <div class="buy__charac-row"><span class="buy__charac-key">производитель производитель:</span><span class="buy__charac-value">Dell</span></div>
+                                <div class="buy__charac-row"><span class="buy__charac-key">модель:</span><span class="buy__charac-value">Dell</span></div>
+                                <div class="buy__charac-row"><span class="buy__charac-key">диагональ:</span><span class="buy__charac-value">Dell</span></div>
+                                <div class="buy__charac-row"><span class="buy__charac-key">веc:</span><span class="buy__charac-value">Dell</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="characteristic" id="charac">
+                    <div class="characteristic__title-block">
+                        <h3 class="characteristic__title">Характеристики Dell 5570</h3>
+                        <div class="characteristic__invisible-rotate-block"></div>
+                    </div>
+                    <div class="characteristic__table-wrapper">
+                        <table class="characteristic__table" id="charac-table">
+                            <tr>
+                                <td class="characteristic__key">Макс. объем оперативной памяти:</td>
+                                <td class="characteristic__value">Intel Core i3 / i3-6100U / 256 Гб / DVD</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristic__key">Макс. объем оперативной памяти:</td>
+                                <td class="characteristic__value">Intel Core i3 / i3-6100U / 256 Гб / DVD</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristic__key">Макс. объем оперативной памяти:</td>
+                                <td class="characteristic__value">Intel Core i3 / i3-6100U / 256 Гб / DVD</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristic__key">Макс. объем оперативной памяти:</td>
+                                <td class="characteristic__value">Intel Core i3 / i3-6100U / 256 Гб / DVD</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristic__key">Макс. объем оперативной памяти:</td>
+                                <td class="characteristic__value">Intel Core i3 / i3-6100U / 256 Гб / DVD</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristic__key">Макс. объем оперативной памяти:</td>
+                                <td class="characteristic__value">Intel Core i3 / i3-6100U / 256 Гб / DVD</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristic__key">Макс. объем оперативной памяти:</td>
+                                <td class="characteristic__value">Intel Core i3 / i3-6100U / 256 Гб / DVD</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristic__key">Макс. объем оперативной памяти:</td>
+                                <td class="characteristic__value">Intel Core i3 / i3-6100U / 256 Гб / DVD</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristic__key">Макс. объем оперативной памяти:</td>
+                                <td class="characteristic__value">Intel Core i3 / i3-6100U / 256 Гб / DVD</td>
+                            </tr>
+                            <tr>
+                                <td class="characteristic__key">Макс. объем оперативной памяти:</td>
+                                <td class="characteristic__value">Intel Core i3 / i3-6100U / 256 Гб / DVD</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <section class="describe" id="desc">
+                    <div class="describe__title-block">
+                        <h3 class="describe__title">Описание</h3>
+                        <div class="describe__invisible-rotate-block"></div>
+                    </div>
+                    <div class="describe__desc-block">
+                        <p>Относительно недорогой полноформатный ноутбук среднего класса с хорошим уровнем производительности и отличной автономностью. Пригоден для решения широкого круга задач, в том числе для использования его в качестве замены домашнему персональному компьютеру. Эта модель создана на базе мобильной аппаратной платформы от Intеl и оснащена процессором семейства Core i3/i5. Объем оперативной памяти в старших модификациях составляет 8 Гб, чего достаточно для работы браузеров или офисных приложений. Но, при необходимости он может быть легко расширен до 20 Гб. За вывод изображения и базовый уровень 3D производительности ноутбука Acer Extensa 2540 отвечает встроенное в процессор видеоядро.</p>
+                        <p>Относительно недорогой полноформатный ноутбук среднего класса с хорошим уровнем производительности и отличной автономностью. Пригоден для решения широкого круга задач, в том числе для использования его в качестве замены домашнему персональному компьютеру. Эта модель создана на базе мобильной аппаратной платформы от Intеl и оснащена процессором семейства Core i3/i5. Объем оперативной памяти в старших модификациях составляет 8 Гб, чего достаточно для работы браузеров или офисных приложений. Но, при необходимости он может быть легко расширен до 20 Гб. За вывод изображения и базовый уровень 3D производительности ноутбука Acer Extensa 2540 отвечает встроенное в процессор видеоядро.</p>
+                    </div>
+                </section>
+                <section class="video" id="video">
+                    <div class="video__title-block">
+                        <h3 class="video__title">Видеообзор</h3>
+                        <div class="video__invisible-rotate-block"></div>
+                    </div>
+                    <div class="video__video-block"><iframe src="https://www.youtube.com/embed/mKt-MDwtVB4" allowfullscreen></iframe></div>
+                </section>
+                <section class="price-block" id="price">
+                    <div class="price-block__title-block">
+                        <h3 class="price-block__title">Цены на Dell Inspiron 5570 в г. Москва</h3>
+                        <div class="price-block__invisible-rotate-block"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="brand-block">
+                                <div class="brand-block__shop-block"><img class="brand-block__img" src="img/theme/shop/brand5.png" alt="#" title="#" /></div>
+                                <div class="brand-block__desc-block"><a class="brand-block__model" href="#" title="#">Dell Inspiron 5570, White (5570-5342)</a>
+                                    <div class="brand-block__charac-block"><span class="brand-block__single-charac">intel i5</span><span class="brand-block__slash">/</span><span class="brand-block__single-charac">8 Гб</span><span class="brand-block__slash">/</span><span class="brand-block__single-charac">Windows 10</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="silo">
+                                <div class="silo__silo-block">
+                                    <div class="silo__silo-title">Есть на складе</div>
+                                    <div class="silo__silo-town">по Москве</div>
+                                </div>
+                                <div class="silo__price-wrap">
+                                    <p class="silo__cost">23 990</p><a class="silo__link button button-yellow" href="#" title="#">в Магазин</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="brand-block">
+                                <div class="brand-block__shop-block"><img class="brand-block__img" src="img/theme/shop/brand5.png" alt="#" title="#" /></div>
+                                <div class="brand-block__desc-block"><a class="brand-block__model" href="#" title="#">Dell Inspiron 5570, White (5570-5342)</a>
+                                    <div class="brand-block__charac-block"><span class="brand-block__single-charac">intel i5</span><span class="brand-block__slash">/</span><span class="brand-block__single-charac">8 Гб</span><span class="brand-block__slash">/</span><span class="brand-block__single-charac">Windows 10</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="silo">
+                                <div class="silo__silo-block">
+                                    <div class="silo__silo-title">Есть на складе</div>
+                                    <div class="silo__silo-town">по Москве</div>
+                                </div>
+                                <div class="silo__price-wrap">
+                                    <p class="silo__cost">23 990</p><a class="silo__link button button-yellow" href="#" title="#">в Магазин</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="brand-block">
+                                <div class="brand-block__shop-block"><img class="brand-block__img" src="img/theme/shop/brand5.png" alt="#" title="#" /></div>
+                                <div class="brand-block__desc-block"><a class="brand-block__model" href="#" title="#">Dell Inspiron 5570, White (5570-5342)</a>
+                                    <div class="brand-block__charac-block"><span class="brand-block__single-charac">intel i5</span><span class="brand-block__slash">/</span><span class="brand-block__single-charac">8 Гб</span><span class="brand-block__slash">/</span><span class="brand-block__single-charac">Windows 10</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="silo">
+                                <div class="silo__silo-block">
+                                    <div class="silo__silo-title">Есть на складе</div>
+                                    <div class="silo__silo-town">по Москве</div>
+                                </div>
+                                <div class="silo__price-wrap">
+                                    <p class="silo__cost">23 990</p><a class="silo__link button button-yellow" href="#" title="#">в Магазин</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="brand-block">
+                                <div class="brand-block__shop-block"><img class="brand-block__img" src="img/theme/shop/brand5.png" alt="#" title="#" /></div>
+                                <div class="brand-block__desc-block"><a class="brand-block__model" href="#" title="#">Dell Inspiron 5570, White (5570-5342)</a>
+                                    <div class="brand-block__charac-block"><span class="brand-block__single-charac">intel i5</span><span class="brand-block__slash">/</span><span class="brand-block__single-charac">8 Гб</span><span class="brand-block__slash">/</span><span class="brand-block__single-charac">Windows 10</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="silo">
+                                <div class="silo__silo-block">
+                                    <div class="silo__silo-title">Есть на складе</div>
+                                    <div class="silo__silo-town">по Москве</div>
+                                </div>
+                                <div class="silo__price-wrap">
+                                    <p class="silo__cost">23 990</p><a class="silo__link button button-yellow" href="#" title="#">в Магазин</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><button class="price-block__button button button-blue show-more" type="button" value="все предложения">все предложения</button>
+                    <div class="price-block__shop-count"><span class="price-block__in">в</span><span class="price-block__count">47</span><span class="price-block__shop-word">магазинах</span></div>
+                </section>
+                <section class="feed" id="feed">
+                    <div class="feed__title-block">
+                        <h3 class="feed__title">Отзывы о ноутбук Dell Inspiron 5570</h3>
+                        <div class="feed__invisible-rotate-block"></div>
+                    </div>
+                    <div class="feed__add-feed-block">
+                        <div class="feed__feed-count"><span class="feed__count">25</span><span class="feed__word">отзывов</span></div>
+                        <div class="feed__add-feed"><a class="feed__add-word anchor-link" href="#addFeed" title="#">+ Добавить отзыв</a></div>
+                    </div>
+                    <div class="feed__wrapper">
+                        <div class="feed-card">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <div class="feed-card__name-n-date">
+                                        <p class="feed-card__name">Антон</p><span class="feed-card__divide">|</span>
+                                        <p class="feed-card__time"><time> 04.15.2018 </time></p>
+                                    </div>
+                                    <div class="feed-card__mark-block">
+                                        <p class="feed-card__mark-word">Оценка</p>
+                                        <div class="feed-card__mark-wrap"><span class="feed-card__mark">4</span>
+                                            <div class="rating">
+                                                <div class="rating__stars-block"><img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" /></div>
+                                                <p class="rating__choice-title">Хороший выбор</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <p class="feed-card__recommend-accept">Реккомендую покупку</p>
+                                    <p class="feed-card__reccomend-desc">Хороший помощник в работе этот ноутбук, легкий, тонкий, с прочным корпусом, характерным для Lenovo IdeaPad. Диагональ средняя, для комфортной работы вполне достаточно и батарея так медленнее садится. Есть веб-камера, качество приятное, неплохой обзор и четкость выдается нормальная. Тихая клавиатура, просто шелестит, когда быстрый набор веду. Что касательно скорости работы, то тут вообще всё идеально — любая программа загружается моментально.</p>
+                                </div>
+                                <div class="feed-card__bottom-block">
+                                    <div class="col-12 col-xl-4 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
+                                        <div class="feed-card__useful-block">Полезен ли отзыв? <p class="feed-card__useful-title"></p>
+                                            <div class="feed-card__useful-btn-block"><label class="feed-card__useful-btn button active"><input class="feed-card__usefull-input usefull-btn" type="radio" checked="checked" name="feed1" /><span class="feed-card__useful-span">Да</span></label><label class="feed-card__useful-btn button"><input class="feed-card__usefull-input not-usefull-btn" type="radio" name="feed2" /><span class="feed-card__useful-span">Нет</span></label></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xl-8 d-flex flex-wrap align-items-center order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                        <div class="feed-card__liked-row"><span class="feed-card__liked-status">Понравилось</span>
+                                            <p class="feed-card__liked-desc">Хороший дизайн и производительность</p>
+                                        </div>
+                                        <div class="feed-card__liked-row"><span class="feed-card__disliked-status">Не понравилось</span>
+                                            <p class="feed-card__liked-desc">Много брака, в частности треск вентиляторов</p>
+                                        </div>
+                                        <div class="feed-card__liked-row"><span class="feed-card__exp-status">Опыт использования</span>
+                                            <p class="feed-card__liked-desc">Несколько месяцев</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed-card">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <div class="feed-card__name-n-date">
+                                        <p class="feed-card__name">Антон</p><span class="feed-card__divide">|</span>
+                                        <p class="feed-card__time"><time> 04.15.2018 </time></p>
+                                    </div>
+                                    <div class="feed-card__mark-block">
+                                        <p class="feed-card__mark-word">Оценка</p>
+                                        <div class="feed-card__mark-wrap"><span class="feed-card__mark">4</span>
+                                            <div class="rating">
+                                                <div class="rating__stars-block"><img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" /><img class="rating__star" src="img/theme/icons/star_unchecked.png" alt="" role="presentation" /></div>
+                                                <p class="rating__choice-title">Хороший выбор</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <p class="feed-card__recommend-reject">Не реккомендую покупку</p>
+                                    <p class="feed-card__reccomend-desc">Хороший помощник в работе этот ноутбук, легкий, тонкий, с прочным корпусом, характерным для Lenovo IdeaPad. Диагональ средняя, для комфортной работы вполне достаточно и батарея так медленнее садится. Есть веб-камера, качество приятное, неплохой обзор и четкость выдается нормальная. Тихая клавиатура, просто шелестит, когда быстрый набор веду. Что касательно скорости работы, то тут вообще всё идеально — любая программа загружается моментально.</p>
+                                </div>
+                                <div class="feed-card__bottom-block">
+                                    <div class="col-12 col-xl-4 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
+                                        <div class="feed-card__useful-block">Полезен ли отзыв? <p class="feed-card__useful-title"></p>
+                                            <div class="feed-card__useful-btn-block"><label class="feed-card__useful-btn button active"><input class="feed-card__usefull-input usefull-btn" type="radio" checked="checked" name="feed1" /><span class="feed-card__useful-span">Да</span></label><label class="feed-card__useful-btn button"><input class="feed-card__usefull-input not-usefull-btn" type="radio" name="feed2" /><span class="feed-card__useful-span">Нет</span></label></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xl-8 d-flex flex-wrap align-items-center order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                        <div class="feed-card__liked-row"><span class="feed-card__liked-status">Понравилось</span>
+                                            <p class="feed-card__liked-desc">Хороший дизайн и производительность</p>
+                                        </div>
+                                        <div class="feed-card__liked-row"><span class="feed-card__disliked-status">Не понравилось</span>
+                                            <p class="feed-card__liked-desc">Много брака, в частности треск вентиляторов</p>
+                                        </div>
+                                        <div class="feed-card__liked-row"><span class="feed-card__exp-status">Опыт использования</span>
+                                            <p class="feed-card__liked-desc">Несколько месяцев</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="pagination">
+                    <ul>
+                        <li class="pagination__arrow-left"><a class="pagination__link" id="prev" href="#" title="назад">
+                                <</a> </li> <li class="pagination__item active"><a class="pagination__link" href="#" title="1"><span>1</span></a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#" title="2"><span>2</span></a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#" title="3"><span>3</span></a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#" title="4"><span>4</span></a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#" title="5"><span>5</span></a></li>
+                        <li class="pagination__arrow-right"><a class="pagination__link" id="next" href="#" title="вперед">></a></li>
+                    </ul>
+                </div>
+                <section class="add-feed">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-8">
+                            <form id="addFeed">
+                                <div class="add-feed__add-feed-block">
+                                    <h2 class="add-feed__title">Добавить отзыв</h2>
+                                    <div class="add-feed__row"><span class="add-feed__form-title">Ваше имя:</span><input class="add-feed__input" type="text" placeholder="Ваше имя" /></div>
+                                    <div class="add-feed__row"><span class="add-feed__form-title star">Понравилось:</span><textarea class="add-feed__textarea" rows="5" required="required" placeholder="Плюсы товара"></textarea></div>
+                                    <div class="add-feed__row"><span class="add-feed__form-title star"> Не понравилось:</span><textarea class="add-feed__textarea" rows="5" required="required" placeholder="Недостаатки товара"></textarea></div>
+                                    <div class="add-feed__row"><span class="add-feed__form-title">Комментарий:</span><textarea class="add-feed__textarea" rows="5" placeholder="Ваш комментарий"></textarea></div>
+                                    <div class="add-feed__row"><span class="add-feed__form-title">Опыт использования:</span><input class="add-feed__input" type="text" placeholder="Введите срок" /></div>
+                                </div>
+                                <div class="add-feed__rate-block">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="add-feed__rating-block">
+                                                <div class="add-feed__main-rate"><span class="add-feed__rate-this">Оценить</span>
+                                                    <div class="add-feed__rate-container">
+                                                        <div class="rating-container"><img class="add-feed__star one-star rating-star rating-chosen" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="add-feed__star two-star rating-star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="add-feed__star three-star rating-star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="add-feed__star four-star rating-star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /><img class="add-feed__star five-star rating-star" src="img/theme/icons/star_checked.png" alt="" role="presentation" /></div>
+                                                        <div class="new-modal__meaning-block consult-feed__meaning-block">
+                                                            <div class="new-modal__meaning meaning" style="display: none;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-feed__mark-block"><span class="add-feed__mark" id="mark">5</span></div>
+                                                </div>
+                                                <p class="add-feed__rate-this">Рекомендуете ли вы этот товар другим покупателям?</p>
+                                                <div class="add-feed__rate-this-block"><label class="add-feed__rate-label"><input id="rateYes" name="rateYes" type="radio" checked="checked" /><span class="add-feed__span-outside"><span class="add-feed__span-inside"></span></span><span class="add-feed__useful-span">Да</span></label><label class="add-feed__rate-label"><input id="rateNo" name="rateYes" type="radio" /><span class="add-feed__span-outside"><span class="add-feed__span-inside"></span></span><span class="add-feed__useful-span">Нет</span></label></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="add-feed__send-block"><button class="add-feed__btn button button-blue" type="submit" value="Отправить">Отправить</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="similar-goods" id="similar">
+                    <div class="similar-goods__title-block">
+                        <h3 class="similar-goods__title">Похожие товары</h3>
+                        <div class="similar-goods__invisible-rotate-block"></div>
+                    </div>
+                    <div class="popular">
+                        <div class="row" id="popular-slider">
+                            <div class="popular__card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card1.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">54</span></a></div>
+                            <div class="popular__card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card1.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">54</span></a></div>
+                            <div class="popular__card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card1.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">54</span></a></div>
+                            <div class="popular__card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card1.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">54</span></a></div>
+                            <div class="popular__card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card1.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">54</span></a></div>
+                            <div class="popular__card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card1.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">54</span></a></div>
+                            <div class="popular__card">
+                                <!--+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")--><a class="popular__img-link" href="#" title="#"><img class="popular__img" src="img/card/card1.png" alt="#" title="" /></a><a class="popular__img-link-desc" href="#" title="#">Товар</a><a class="popular__price button button-yellow" href="#" title="#">от<span class="popular__total-price">54</span></a></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="subscribe" id="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="subscribe__subscribe-social-block">
+                            <h3 class="subscribe__title">Подпишись на все лучшие цены от <span class="subscribe__title-shop" id="shop-calc">5 230</span> <span class="subscribe__title-shop-other">интернет-магазинов:</span></h3>
+                        </div>
+                        <form class="subscribe__form" action="#" name="subscribe" id="subscribeForm">
+                            <h3 class="subscribe__title-sucsess" id="subscrSuccsess">Вы успешно подписались</h3><input class="subscribe__email input-default" required="required" type="email" name="emailaddress" id="email" placeholder="Введите свой e-mail" /><button class="subscribe__btn-subsc button button-yellow" id="sucsessBtn" type="submit" value="подписаться">подписаться</button>
+                        </form>
+                        <div class="social-entry">
+                            <h4 class="social-entry__title">Через соцсети:</h4>
+                            <ul class="social-entry__social-block">
+                                <div data-mobile-view="true" data-share-size="40" data-like-text-enable="false" data-background-alpha="0.0" data-pid="1844693" data-mode="share" data-background-color="#ffffff" data-share-shape="round" data-share-counter-size="12" data-icon-color="#ffffff" data-mobile-sn-ids="fb.vk.tw.ok.wh.tm.vb." data-text-color="#000000" data-buttons-color="#FFFFFF" data-counter-background-color="#ffffff" data-share-counter-type="disable" data-orientation="horizontal" data-following-enable="false" data-sn-ids="fb.vk.tw.ok.wh.tm.vb." data-preview-mobile="false" data-selection-enable="true" data-exclude-show-more="false" data-share-style="1" data-counter-background-alpha="1.0" data-top-button="false" class="uptolike-buttons"></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="shop-add">
+                            <div class="row">
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand2.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand3.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand4.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand5.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand6.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand7.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card" href="#" title="#"><img class="shop-add__img" src="img/theme/shop/brand8.png" alt="#" title="" /></a></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4"><a class="shop-add__shop-card shop-add__shop-card-no-border" href="#addShop" title="#"><span class="shop-add__add">+</span><span class="shop-add__add-shop-link">Подключить магазин</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <div class="container">
+                <div class="row">
+                    <h3 class="service__title">Сервис поиска товаров и цен</h3>
+                    <p class="service__desc-title">Сервис SravniPrice.ru ищет лучшие цены на все, что продается в Москве. Здесь можно сравнить цены на 23 млн товаров и среди 6 тысяч магазинов выбрать именно тот, который предлагает самую низкую стоимость. SravniPrice.ru ежедневно собирает 100 000 скидок и 5000 промокодов со всех интернет-магазинов, чтобы купить выгодно.</p>
+                    <p class="service__desc">Мы не продаём товары и не организовываем их доставку, мы работаем для того, чтобы покупатель мог быстро и удобно найти самое выгодное предложение. Для тех, кто определяется с выбором, в каждом разделе есть подбор по параметрам и возможность сравнить товары между собой. Доступен и удобный текстовый поиск, позволяющий искать как нужные разделы, так и конкретные товары по названию. А на странице каждой модели есть подробная информация, которая поможет принять решение: описание, технические характеристики, фото и видео, полезные ссылки и отзывы. Там же находится блок «Где купить?» со списком интернет-магазинов, ценами и прямыми ссылками на страницу покупкию</p>
+                    <p class="service__desc">К системе SravniPrice.ru подключено более 1000 магазинов, данные по которым постоянно обновляются. Благодаря этому вы сможете не только выбрать подходящий товар, но и купить его по самым выгодным условиям!</p>
+                </div>
+            </div>
+        </section>
+        <div id="toTop">Наверх</div>
+    </main>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                    <li><a class="footer__link" href="#" title="#">Бытовая техника</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <p class="sub-footer__all-rights">© 2019 SravniPrice.ru All rights reserved.</p><a class="sub-footer__add-shop" href="#addShop" title="#"><span class="sub-footer__plus">+</span><span class="sub-footer__desc-add-shop">Подключить магазин</span></a>
+            </div>
+        </div>
+    </div>
+    <form class="add-shop popup white-popup-block mfp-hide" id="addShop" autocomplete="off">
+        <div class="add-shop__header">
+            <h2 class="add-shop__title">Оставить заявку онлайн</h2>
+            <div class="add-shop__close-btn"><img class="add-shop__close" src="img/theme/icons/closeModal.svg" alt="закрыть" title="" /></div>
+        </div>
+        <div class="add-shop__body"><input class="add-shop__input-default input-default" id="fio" type="text" name="fio" placeholder="ФИО" required="required" /><input class="add-shop__input-default input-default" id="phone" type="tel" name="tel" placeholder="Телефон" required="required" /><input class="add-shop__input-default input-default" id="eMail" type="email" name="eMail" placeholder="E - mail" required="required" /><textarea class="add-shop__textarea-default input-default" id="message" rows="7" name="message" placeholder="Сообщение" required="required"></textarea>
+            <div class="add-shop__send-block">
+                <div class="add-shop__confirm-block"><label class="label-checkbox"><input class="label-checkbox__input-hidden" required="required" type="checkbox" id="confirmData" name="confirmData" /><span class="label-checkbox__label-span"></span></label>
+                    <p>Я соглашаюсь на обработку персональных данных</p>
+                </div><button class="add-shop__button button button-yellow" type="submit" value="отправить">отправить</button>
+            </div>
+        </div>
+    </form>
+    <form class="add-shop popup white-popup-block mfp-hide" id="chooseRegion" autocomplete="off">
+        <div class="add-shop__header">
+            <h2 class="add-shop__title">Выбор города</h2>
+            <div class="add-shop__close-btn"><img class="add-shop__close" src="img/theme/icons/closeModal.svg" alt="закрыть" title="" /></div>
+        </div>
+        <div class="add-shop__body">
+            <div class="add-shop__row">
+                <p class="add-shop__country">Страна:</p>
+                <p class="add-shop__country-choose">Россия</p>
+            </div>
+            <div class="add-shop__row">
+                <p class="add-shop__country">Уточнить регион:</p><select class="add-shop__select-country" id="countrySelect" name="country" data-placeholder=""></select>
+            </div>
+            <div class="add-shop__row">
+                <p class="add-shop__country">Выбрать город:</p>
+            </div>
+            <div class="add-shop__regions-block input-default"></div>
+        </div>
+    </form>
+    <form class="add-shop popup white-popup-block mfp-hide" id="thanks" autocomplete="off">
+        <div class="add-shop__header">
+            <h2 class="add-shop__title">Спасибо!</h2>
+            <div class="add-shop__close-btn"><img class="add-shop__close" src="img/theme/icons/closeModal.svg" alt="закрыть" title="" /></div>
+        </div>
+        <div class="add-shop__body">
+            <p class="add-shop__thanks-text">Ваша заявка принята. <br> Наш специалист рассмотрит ваше обращение и обязательно свяжется с вами в ближайшее время.</p>
+        </div>
+    </form>
+</body>
+
+</html>

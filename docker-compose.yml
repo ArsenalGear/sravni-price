@@ -1,0 +1,41 @@
+version: '3'
+services:
+  app:
+    hostname: "app"
+    ports:
+      - "6379:6379" #порт redis
+      - "8085:8000" #порт приложения
+      - "8099:8099" #pusher (APP_PUSH_PORT в .env)
+      - "5559:5559" #zmq (для сокетов) (APP_ZMQ_PORT в .env)
+    build: .
+    volumes:
+      - .:/var/www
+    depends_on:
+      - mysql_db
+      - redis
+  mysql_db:
+    hostname: "mysql_db"
+    image: mysql:5.7
+    ports:
+      - "3310:3306"
+    environment:
+      - "MYSQL_ROOT_PASSWORD=just_db"
+      - "MYSQL_ROOT_DATABASE=sravniprice_db"
+    logging:
+      driver: none
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql_db:db
+    ports:
+      - 8769:80
+    environment:
+      MYSQL_ROOT_PASSWORD: just_db
+    depends_on:
+      - mysql_db
+  redis:
+    image: redis:4.0
+    ports:
+      - "6382:6379"

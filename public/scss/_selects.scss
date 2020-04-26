@@ -1,0 +1,74 @@
+//.header__select-block {
+//  position: relative;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  padding: 0 0.5rem;
+//  cursor: pointer;
+//
+//  //& .select2-container {
+//  //  min-width: 11.9rem;
+//  //}
+//
+//  &:before {
+//    content: '';
+//    z-index: 2;
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    display: block;
+//    width: 2rem;
+//    height: 42px;
+//    background-size: contain;
+//    background:  url(../img/header/Pointer.png) center center no-repeat;
+//    transform: translate(-85%, -27%);
+//  }
+//
+//  &:after {
+//    content: '';
+//    z-index: 2;
+//    position: absolute;
+//    top: 0;
+//    right: 0;
+//    display: block;
+//    width: 2rem;
+//    height: 42px;
+//    background-size: contain;
+//    background:  url(../img/header/arrowDown.png) center center no-repeat;
+//    transform: translate(20%, -27%);
+//  }
+//}
+
+//.header__select {
+//  position: relative;
+//  min-width: 5rem;
+//  padding-right: 1.2rem;
+
+  //& + .select2  .select2-selection--single {
+  //  border: none;
+  //  outline: 0;
+  //  background-color: $bg-light-blue;
+  //
+  //  &:hover, &:focus, &:active {
+  //    outline: 0;
+  //    border: none!important;
+  //    background-color: $bg-light-blue;
+  //  }
+  //}
+  //
+  //& + .select2  .select2-selection--single span {
+  //  color: $text-blue;
+  //}
+  //
+  //& + .select2 .select2-selection__arrow {
+  //  background:  url('../img/header/arrowDown.png') center center no-repeat;
+  //
+  //  & b {
+  //    display: none;
+  //  }
+  //}
+//}
+//
+//.select2-container--default .select2-results__option--highlighted[aria-selected] {
+//  background-color: $bg-blue-color;
+//}

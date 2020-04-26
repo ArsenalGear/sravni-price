@@ -1,0 +1,118 @@
+.input-default {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.66rem 1rem;
+  background: $white;
+  border: 1px solid $border-grey-color;
+  outline: none;
+  border-radius: $bor-rad-inpt;
+  font: 500 1rem/1.125rem $font-main;
+  color: #000;
+
+  &::placeholder {
+    opacity: 1;
+    font: 300 0.875rem/1.125rem $font-main;
+    color: #757575;
+  }
+  &:hover {
+    transition: $transition-default;
+    //border-color: $link-color;
+  }
+  &:focus {
+    transition: $transition-default;
+    border-color: $link-color;
+  }
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: initial;
+  margin-right: 0.5rem;
+
+  &__input-hidden {
+    @include vh();
+  }
+
+  &__label-span {
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    border: 1px solid $border-grey-color;
+    border-radius: 3px;
+
+    &:hover, &:focus {
+      border: 1px solid $border-main-color;
+    }
+  }
+
+  &__input-hidden:checked + .label-checkbox__label-span {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    //background-color: $bg-blue-color;
+    border-radius: 3px;
+    border: 1px solid $border-main-color;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 17px;
+      height: 17px;
+      top: 0;
+      left: 2px;
+      background: url('../img/theme/icons/Check_Icon.png') no-repeat;
+    }
+  }
+}
+
+.feed-card {
+
+  &__usefull-input {
+    @include vh();
+  }
+
+  &__useful-btn {
+    display: block;
+    margin-right: 0.5rem;
+    background-color: transparent;
+    color: $text-blue;
+    border: 2px solid $border-main-color;
+    padding: 0.3rem 1rem;
+    font: 700 0.75rem/1rem $font-main;
+
+    &.active {
+      background-color: $bg-blue-color;
+      color: $white;
+    }
+  }
+}
+
+.add-feed {
+
+  &__span-outside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    padding: 2px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid $border-main-color;
+  }
+
+  &__span-inside {
+    display: block;
+    width: 7px;
+    height: 7px;
+    padding: 2px;
+    border-radius: 50%;
+  }
+
+  &__rate-label input:checked + .add-feed__span-outside .add-feed__span-inside{
+    background-color: $border-main-color;
+  }
+}

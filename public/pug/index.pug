@@ -1,0 +1,343 @@
+extends layouts/site
+
+block content
+
+    .container.slide-container
+        +b('div').slider#slider
+            +e('div').wrapper#slider-main
+                +e('div').slide
+                    +e('div').slide-one
+                        +e('div').wrap.square-wrap(style="display: flex; flex-direction: column; justify-content: space-between;")
+                            +e('div').wrap.wrap-wb.wrap-hs
+                                +e('a').link.link-ws.link-hs(href="#" title="sport" style="max-width: 49%")
+                                    +e('img').img(src="img/slider/slide1/sport.png")
+                                +e('a').link.link-ws.link-hs(href="#" title="tech" style="max-width: 49%")
+                                    +e('img').img(src="img/slider/slide1/tech.png")
+                            +e('div').wrap.wrap-wb.wrap-hs
+                                +e('a').link.link-wb.link-hs(href="#" title="audio")
+                                    +e('img').img(src="img/slider/slide1/audio.png")
+                        +e('div').wrap.wrap-ws.wrap-hb
+                            +e('a').link.link-ws(href="#" title="cell")
+                                +e('img').img(src="img/slider/slide1/cell.png")
+                        +e('div').wrap.wrap-ws.wrap-hb(style="display: flex; flex-direction: column; justify-content: space-between;")
+                            +e('a').link.link-ws.link-hs(href="#" title="home")
+                                +e('img').img(src="img/slider/slide1/home.png")
+                            +e('a').link.link-ws.link-hs(href="#" title="comp")
+                                +e('img').img(src="img/slider/slide1/comp.png")
+                +e('div').slide
+                    +e('div').slide-one
+                        +e('div').wrap.wrap-wb.wrap-hb(style="display: flex; flex-direction: column; justify-content: space-between;")
+                            +e('div').wrap.wrap-wb.wrap-hs
+                                +e('a').link.link-wb.link-hs(href="#" title="accessories")
+                                    +e('img').img(src="img/slider/slider2/accessories.png")
+                            +e('div').wrap.wrap-wb.wrap-hs
+                                +e('a').link.link-wb.link-hs(href="#" title="souvenirs")
+                                    +e('img').img(src="img/slider/slider2/souvenirs.png")
+
+                        +e('div').wrap.wrap-ws.wrap-hb
+                            +e('a').link.link-ws(href="#" title="construction")
+                                +e('img').img(src="img/slider/slider2/construction.png")
+
+                        +e('div').wrap.wrap-ws.wrap-hb(style="display: flex; flex-direction: column; justify-content: space-between;")
+                            +e('a').link.link-ws.link-hs(href="#" title="for_kids")
+                                +e('img').img(src="img/slider/slider2/for_kids.png")
+                            +e('a').link.link-ws.link-hs(href="#" title="auto")
+                                +e('img').img(src="img/slider/slider2/auto.png")
+
+                +e('div').slide
+                    +e('div').slide-one
+                        +e('div').wrap.wrap-wb.wrap-hb(style="display: flex; flex-direction: column; justify-content: space-between;")
+                            +e('div').wrap.wrap-wb.wrap-hs
+                                +e('a').link.link-wb.link-hs(href="#" title="health_beauty")
+                                    +e('img').img(src="img/slider/slider3/health_beauty.png")
+                            +e('div').wrap.wrap-wb.wrap-hs
+                                +e('a').link.link-wb.link-hs(href="#" title="books")
+                                    +e('img').img(src="img/slider/slider3/books.png")
+
+                        +e('div').wrap.wrap-ws.wrap-hb(style="display: flex; flex-direction: column; justify-content: space-between;")
+                            +e('a').link.link-ws.link-hs(href="#" title="clothes_ shoes")
+                                +e('img').img(src="img/slider/slider3/clothes_ shoes.png")
+                            +e('a').link.link-ws.link-hs(href="#" title="communication")
+                                +e('img').img(src="img/slider/slider3/communication.png")
+
+                        +e('div').wrap.wrap-ws.wrap-hb(style="display: flex; flex-direction: column; justify-content: space-between;")
+                            +e('a').link.link-ws.link-hs(href="#" title="for_office")
+                                +e('img').img(src="img/slider/slider3/for_office.png")
+                            +e('a').link.link-ws.link-hs(href="#" title="music")
+                                +e('img').img(src="img/slider/slider3/music.png")
+
+                +e('div').slide
+                    +e('div').slide-one
+                        +e('div').wrap.wrap-ws.wrap-hb(style="display: flex; flex-direction: column; justify-content: space-between;")
+                            +e('a').link.link-ws.link-hs(href="#" title="services")
+                                +e('img').img(src="img/slider/slider4/services.png")
+                            +e('a').link.link-ws.link-hs(href="#" title="stock")
+                                +e('img').img(src="img/slider/slider4/stock.png")
+
+                        +e('div').wrap.wrap-wb.wrap-hb(style="display: flex; flex-direction: column; justify-content: space-between;")
+                            +e('a').link.link-wb.link-hb(href="#" title="smart_house")
+                                +e('img').img(src="img/slider/slider4/smart_house.png")
+
+                        +e('div').wrap.wrap-ws.wrap-hb(style="display: flex; flex-direction: column; justify-content: space-between;")
+                            +e('a').link.link-ws.link-hb(href="#" title="presents")
+                                +e('img').img(src="img/slider/slider4/presents.png")
+
+
+
+    +b('section').popular#popular
+        .container
+            .row
+                +e('h2').title Популярные товары
+            .row
+                .col-12.col-sm-6.col-md-4.col-lg-3
+                    +e('div').card
+                        //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                        +e('a').img-link(href="#" title="#")
+                            +e('img').img(src="img/card/card1.png" alt="#")
+                        +e('a').img-link-desc(href="#" title="#") Товар
+                        +e('a').price.button.button-yellow(href="#" title="#") от
+                            +e('span').total-price 5490
+                .col-12.col-sm-6.col-md-4.col-lg-3
+                    +e('div').card
+                        //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                        +e('a').img-link(href="#" title="#")
+                            +e('img').img(src="img/card/card2.png" alt="#")
+                        +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой с хорошими качествами и ценой
+                        +e('a').price.button.button-yellow(href="#" title="#") от
+                            +e('span').total-price 5490
+                .col-12.col-sm-6.col-md-4.col-lg-3
+                    +e('div').card
+                        //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                        +e('a').img-link(href="#" title="#")
+                            +e('img').img(src="img/card/card3.png" alt="#")
+                        +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой с хорошими качествами и ценой с хорошими качествами и ценой
+                        +e('a').price.button.button-yellow(href="#" title="#") от
+                            +e('span').total-price 5490
+                .col-12.col-sm-6.col-md-4.col-lg-3
+                    +e('div').card
+                        //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                        +e('a').img-link(href="#" title="#")
+                            +e('img').img(src="img/card/card4.png" alt="#")
+                        +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой
+                        +e('a').price.button.button-yellow(href="#" title="#") от
+                            +e('span').total-price 5490
+                .col-12.col-sm-6.col-md-4.col-lg-3
+                    +e('div').card
+                        //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                        +e('a').img-link(href="#" title="#")
+                            +e('img').img(src="img/card/card5.png" alt="#")
+                        +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой
+                        +e('a').price.button.button-yellow(href="#" title="#") от
+                            +e('span').total-price 5490
+                .col-12.col-sm-6.col-md-4.col-lg-3
+                    +e('div').card
+                        //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                        +e('a').img-link(href="#" title="#")
+                            +e('img').img(src="img/card/card6.png" alt="#")
+                        +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой
+                        +e('a').price.button.button-yellow(href="#" title="#") от
+                            +e('span').total-price 5490
+                .col-12.col-sm-6.col-md-4.col-lg-3
+                    +e('div').card
+                        //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                        +e('a').img-link(href="#" title="#")
+                            +e('img').img(src="img/card/card7.png" alt="#")
+                        +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой
+                        +e('a').price.button.button-yellow(href="#" title="#") от
+                            +e('span').total-price 5490
+                .col-12.col-sm-6.col-md-4.col-lg-3
+                    +e('div').card
+                        //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                        +e('a').img-link(href="#" title="#")
+                            +e('img').img(src="img/card/card8.png" alt="#")
+                        +e('a').img-link-desc(href="#" title="#") Товар с хорошими качествами и ценой
+                        +e('a').price.button.button-yellow(href="#" title="#") от
+                            +e('span').total-price 5490
+            +e('div').show-block
+                +e('a').show-btn.button.button-blue(href="#" title="показать еще") показать все товары
+    +b('section').overview#overview
+        .container
+            .row
+                +e('h2') Обзоры товаров
+            .row
+                .col-12.col-sm-12.col-md-12.col-lg-5
+                    +e('div').big-feed
+                        +e('a').img-big-block(href="#" title="#")
+                            +e('img').img-big(src="img/overview/overviewBig.png" alt="#")
+                        +e('div').overview-main-desc
+                            +e('a').title(href="#" title="#") Супер няни: ТОП-5 детских кресел-качалок
+                            +e('a').desc(href="#" title="#") Лучший способ развязать на время руки мамы в первые месяцы жизни малыша
+                .col-12.col-sm-12.col-md-12.col-lg-7
+                    .row
+                        .col-6.col-sm-4.col-md-4.col-lg-4
+                            +e('a').small-card(href="#" title="#")
+                                +e('div').img-small-block
+                                    +e('img').img-small(src="img/overview/overView1.png" alt="#")
+                                +e('span').desc-small Круговой обзор: ТОП-5 двухканальных видеорегистраторов Круговой обзор: ТОП-5 двухканальных видеорегистраторов
+                        .col-6.col-sm-4.col-md-4.col-lg-4
+                            +e('a').small-card(href="#" title="#")
+                                +e('div').img-small-block
+                                    +e('img').img-small(src="img/overview/overView2.png" alt="#")
+                                +e('span').desc-small Круговой обзор: ТОП-5 двухканальных видеорегистраторов Круговой обзор: ТОП-5 двухканальных видеорегистраторов
+                        .col-6.col-sm-4.col-md-4.col-lg-4
+                            +e('a').small-card(href="#" title="#")
+                                +e('div').img-small-block
+                                    +e('img').img-small(src="img/overview/overView3.png" alt="#")
+                                +e('span').desc-small Круговой обзор: ТОП-5 двухканальных видеорегистраторов
+                        .col-6.col-sm-4.col-md-4.col-lg-4
+                            +e('a').small-card(href="#" title="#")
+                                +e('div').img-small-block
+                                    +e('img').img-small(src="img/overview/overView4.png" alt="#")
+                                +e('span').desc-small Круговой обзор: ТОП-5 двухканальных видеорегистраторов
+                        .col-6.col-sm-4.col-md-4.col-lg-4
+                            +e('a').small-card(href="#" title="#")
+                                +e('div').img-small-block
+                                    +e('img').img-small(src="img/overview/overView5.png" alt="#")
+                                +e('span').desc-small Круговой обзор: ТОП-5 двухканальных видеорегистраторов
+                        .col-6.col-sm-4.col-md-4.col-lg-4
+                            +e('a').small-card(href="#" title="#")
+                                +e('div').img-small-block
+                                    +e('img').img-small(src="img/overview/overView6.png" alt="#")
+                                +e('span').desc-small Круговой обзор: ТОП-5 двухканальных видеорегистраторов
+            +e('div').show-block
+                +e('a').show-btn.button.button-blue(href="#" title="#") все материалы
+    +b('section').sale#sale
+        .container
+            .row
+                +e('div').title-block
+                    +e('h2') Товары со скидкой
+        .container
+            +e('div').slider#sale-slider
+                +e('div').slide-wrapper
+                    +e('div').item-card
+                        +e('div').top-card
+                            //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                            +e('a').img-block(href="#" title="#")
+                                +e('img').img(src="img/card/card9.png" alt="#")
+                            +e('a').title Рюкзак Trek Planet Colorado 55 Синий
+                            +e('div').price-block
+                                +e('span').price-with-sale 4 167
+                                +e('span').old-price <span class="strike">5 555</span>
+                        +e('div').bottom-card
+                            +e('a').btn-sale.button.button-red(href="#" title="#") Скидка
+                                +e('span').sale-val 10
+                                +e('span').sale-percent %
+                            +e('a').main-shop от Яндекс.ру
+                +e('div').slide-wrapper
+                    +e('div').item-card
+                        +e('div').top-card
+                            //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                            +e('a').img-block(href="#" title="#")
+                                +e('img').img(src="img/card/card10.png" alt="#")
+                            +e('a').title Рюкзак Trek Planet Colorado 55 Синий
+                            +e('div').price-block
+                                +e('span').price-with-sale 4 167
+                                +e('span').old-price <span class="strike">5 555</span>
+                        +e('div').bottom-card
+                            +e('a').btn-sale.button.button-red(href="#" title="#") Скидка
+                                +e('span').sale-val 10
+                                +e('span').sale-percent %
+                            +e('a').main-shop от Яндекс.ру
+                +e('div').slide-wrapper
+                    +e('div').item-card
+                        +e('div').top-card
+                            //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                            +e('a').img-block(href="#" title="#")
+                                +e('img').img(src="img/card/card11.png" alt="#")
+                            +e('a').title Рюкзак Trek Planet Colorado 55 Синий
+                            +e('div').price-block
+                                +e('span').price-with-sale 4 167
+                                +e('span').old-price <span class="strike">5 555</span>
+                        +e('div').bottom-card
+                            +e('a').btn-sale.button.button-red(href="#" title="#") Скидка
+                                +e('span').sale-val 10
+                                +e('span').sale-percent %
+                            +e('a').main-shop от Яндекс.ру
+                +e('div').slide-wrapper
+                    +e('div').item-card
+                        +e('div').top-card
+                            //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                            +e('a').img-block(href="#" title="#")
+                                +e('img').img(src="img/card/card12.png" alt="#")
+                            +e('a').title Рюкзак Trek Planet Colorado 55 Синий
+                            +e('div').price-block
+                                +e('span').price-with-sale 4 167
+                                +e('span').old-price <span class="strike">5 555</span>
+                        +e('div').bottom-card
+                            +e('a').btn-sale.button.button-red(href="#" title="#") Скидка
+                                +e('span').sale-val 10
+                                +e('span').sale-percent %
+                            +e('a').main-shop от Яндекс.ру
+                +e('div').slide-wrapper
+                    +e('div').item-card
+                        +e('div').top-card
+                            //+e('img').heart(src="img/theme/icons/Heart.png" alt="heart")
+                            +e('a').img-block(href="#" title="#")
+                                +e('img').img(src="img/card/card12.png" alt="#")
+                            +e('a').title Рюкзак Trek Planet Colorado 55 Синий
+                            +e('div').price-block
+                                +e('span').price-with-sale 4 167
+                                +e('span').old-price <span class="strike">5 555</span>
+                        +e('div').bottom-card
+                            +e('a').btn-sale.button.button-red(href="#" title="#") Скидка
+                                +e('span').sale-val 10
+                                +e('span').sale-percent %
+                            +e('a').main-shop от Яндекс.ру
+
+    +e('div').show-block
+        +e('a').show-btn.button.button-dark(href="#" title="#") показать все товары
+    +b('section').subscribe#subscribe
+        .container
+            .row
+                .col-12.col-sm-12.col-md-12.col-lg-6
+                    +e('div').subscribe-social-block
+                        +e('h3').title Подпишись на все лучшие цены от <span class="subscribe__title-shop" id="shop-calc">5 230</span> <span class="subscribe__title-shop-other">интернет-магазинов:</span>
+
+                    +e('form').form(action="#" name="subscribe" id="subscribeForm")
+                        +e('h3').title-sucsess#subscrSuccsess Вы успешно подписались
+                        +e('input').email.input-default(required type="email" name="emailaddress" id="email" placeholder="Введите свой e-mail")
+                        +e('button').btn-subsc.button.button-yellow(id="sucsessBtn" type="submit" value="подписаться") подписаться
+
+                    +b('div').social-entry
+                        +e('h4').title Через соцсети:
+                        +e('ul').social-block
+                          <div data-mobile-view="true" data-share-size="40" data-like-text-enable="false" data-background-alpha="0.0" data-pid="1844693" data-mode="share" data-background-color="#ffffff" data-share-shape="round" data-share-counter-size="12" data-icon-color="#ffffff" data-mobile-sn-ids="fb.vk.tw.ok.wh.tm.vb." data-text-color="#000000" data-buttons-color="#FFFFFF" data-counter-background-color="#ffffff" data-share-counter-type="disable" data-orientation="horizontal" data-following-enable="false" data-sn-ids="fb.vk.tw.ok.wh.tm.vb." data-preview-mobile="false" data-selection-enable="true" data-exclude-show-more="false" data-share-style="1" data-counter-background-alpha="1.0" data-top-button="false" class="uptolike-buttons" ></div>
+
+                .col-12.col-sm-12.col-md-12.col-lg-6
+                    +b('div').shop-add
+                        .row
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand2.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand3.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand4.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand5.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand6.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand7.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card(href="#" title="#")
+                                    +e('img').img(src="img/theme/shop/brand8.png" alt="#")
+                            .col-6.col-sm-4.col-md-4.col-lg-4
+                                +e('a').shop-card.shop-add__shop-card-no-border(href="#addShop" title="#")
+                                    +e('span').add +
+                                    +e('span').add-shop-link Подключить магазин
+    +b('section').service#service
+        .container
+            .row
+                +e('h3').title Сервис поиска товаров и цен
+                +e('p').desc-title Сервис SravniPrice.ru ищет лучшие цены на все, что продается в Москве. Здесь можно сравнить цены на 23 млн товаров и среди 6 тысяч магазинов выбрать именно тот, который предлагает самую низкую стоимость. SravniPrice.ru ежедневно собирает 100 000 скидок и 5000 промокодов со всех интернет-магазинов, чтобы купить выгодно.
+                +e('p').desc Мы не продаём товары и не организовываем их доставку, мы работаем для того, чтобы покупатель мог быстро и удобно найти самое выгодное предложение. Для тех, кто определяется с выбором, в каждом разделе есть подбор по параметрам и возможность сравнить товары между собой. Доступен и удобный текстовый поиск, позволяющий искать как нужные разделы, так и конкретные товары по названию. А на странице каждой модели есть подробная информация, которая поможет принять решение: описание, технические характеристики, фото и видео, полезные ссылки и отзывы. Там же находится блок «Где купить?» со списком интернет-магазинов, ценами и прямыми ссылками на страницу покупкию
+                +e('p').desc К системе SravniPrice.ru подключено более 1000 магазинов, данные по которым постоянно обновляются. Благодаря этому вы сможете не только выбрать подходящий товар, но и купить его по самым выгодным условиям!
