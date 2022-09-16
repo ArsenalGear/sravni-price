@@ -6,7 +6,7 @@
   "license": "ISC",
   "devDependencies": {
     "bemto.pug": "^2.1.0",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
